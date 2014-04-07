@@ -1,0 +1,132 @@
+\hypertarget{class_drzewo}{\section{Drzewo$<$ typ, klucz, wartosc $>$ Class Template Reference}
+\label{class_drzewo}\index{Drzewo$<$ typ, klucz, wartosc $>$@{Drzewo$<$ typ, klucz, wartosc $>$}}
+}
+
+
+Klasa \hyperlink{class_drzewo}{Drzewo}.  
+
+
+
+
+{\ttfamily \#include $<$drzewo.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_drzewo_a3d06544ae8adc6e69e27bebb92428118}{Drzewo} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor Drzewa. \end{DoxyCompactList}\item 
+void \hyperlink{class_drzewo_a425da0561d35b6d029f00ec827bca06e}{dodaj} (klucz haslo, wartosc dana)
+\begin{DoxyCompactList}\small\item\em Metoda dodaj. \end{DoxyCompactList}\item 
+void \hyperlink{class_drzewo_a9e39ad7ed0307946d39080936f822862}{usun} (klucz haslo)
+\begin{DoxyCompactList}\small\item\em Metoda usun. \end{DoxyCompactList}\item 
+typ $\ast$ \hyperlink{class_drzewo_a339304430644b46c846e2291d1421aa7}{pobierz} (klucz haslo)
+\begin{DoxyCompactList}\small\item\em Metoda pobierz. \end{DoxyCompactList}\item 
+bool \hyperlink{class_drzewo_aa05f21fefa04d44c97cf5f6e300dff07}{is\-\_\-empty} ()
+\begin{DoxyCompactList}\small\item\em Metoda is\-\_\-epmty() \end{DoxyCompactList}\item 
+int \hyperlink{class_drzewo_a021882e4ebc72527f8e5dbc4bdbe6490}{zlicz\-\_\-elementy} ()
+\begin{DoxyCompactList}\small\item\em Metoda zlicz\-\_\-elementy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class typ, class klucz, class wartosc$>$class Drzewo$<$ typ, klucz, wartosc $>$}
+
+Klasa \hyperlink{class_drzewo}{Drzewo}. 
+
+Klasa tworzaca strukture drzewa. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_drzewo_a3d06544ae8adc6e69e27bebb92428118}{\index{Drzewo@{Drzewo}!Drzewo@{Drzewo}}
+\index{Drzewo@{Drzewo}!Drzewo@{Drzewo}}
+\subsubsection[{Drzewo}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class typ , class klucz , class wartosc $>$ {\bf Drzewo}$<$ typ, klucz, wartosc $>$\-::{\bf Drzewo} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_drzewo_a3d06544ae8adc6e69e27bebb92428118}
+
+
+Konstruktor Drzewa. 
+
+Zeruje odpowiednie pola. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_drzewo_a425da0561d35b6d029f00ec827bca06e}{\index{Drzewo@{Drzewo}!dodaj@{dodaj}}
+\index{dodaj@{dodaj}!Drzewo@{Drzewo}}
+\subsubsection[{dodaj}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class typ , class klucz , class wartosc $>$ void {\bf Drzewo}$<$ typ, klucz, wartosc $>$\-::dodaj (
+\begin{DoxyParamCaption}
+\item[{klucz}]{haslo, }
+\item[{wartosc}]{dana}
+\end{DoxyParamCaption}
+)}}\label{class_drzewo_a425da0561d35b6d029f00ec827bca06e}
+
+
+Metoda dodaj. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em haslo} & po ktorym odbywa sie szukanie elementu \\
+\hline
+\mbox{\tt in}  & {\em dana} & ktora zostaje wpisane do danego elementu Dodaje dane na odpowiednie pole. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_drzewo_aa05f21fefa04d44c97cf5f6e300dff07}{\index{Drzewo@{Drzewo}!is\-\_\-empty@{is\-\_\-empty}}
+\index{is\-\_\-empty@{is\-\_\-empty}!Drzewo@{Drzewo}}
+\subsubsection[{is\-\_\-empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class typ , class klucz , class wartosc $>$ bool {\bf Drzewo}$<$ typ, klucz, wartosc $>$\-::is\-\_\-empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_drzewo_aa05f21fefa04d44c97cf5f6e300dff07}
+
+
+Metoda is\-\_\-epmty() 
+
+\begin{DoxyReturn}{Returns}
+Metoda zwraca true, gdy drzewo jest puste i false, gdy w drzewie znajduje sie conajmniej jeden element. 
+\end{DoxyReturn}
+\hypertarget{class_drzewo_a339304430644b46c846e2291d1421aa7}{\index{Drzewo@{Drzewo}!pobierz@{pobierz}}
+\index{pobierz@{pobierz}!Drzewo@{Drzewo}}
+\subsubsection[{pobierz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class typ , class klucz , class wartosc $>$ typ $\ast$ {\bf Drzewo}$<$ typ, klucz, wartosc $>$\-::pobierz (
+\begin{DoxyParamCaption}
+\item[{klucz}]{haslo}
+\end{DoxyParamCaption}
+)}}\label{class_drzewo_a339304430644b46c846e2291d1421aa7}
+
+
+Metoda pobierz. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em haslo} & po ktorym odbywa sie szukanie elementu. Metoda wyswietlajaca dane o odepowienim lisci/polaczeniu drzewa. Szukanie odbywa siê po hasle. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_drzewo_a9e39ad7ed0307946d39080936f822862}{\index{Drzewo@{Drzewo}!usun@{usun}}
+\index{usun@{usun}!Drzewo@{Drzewo}}
+\subsubsection[{usun}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class typ , class klucz , class wartosc $>$ void {\bf Drzewo}$<$ typ, klucz, wartosc $>$\-::usun (
+\begin{DoxyParamCaption}
+\item[{klucz}]{haslo}
+\end{DoxyParamCaption}
+)}}\label{class_drzewo_a9e39ad7ed0307946d39080936f822862}
+
+
+Metoda usun. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em haslo} & po ktorym odbywa sie szukanie elementu. Usuwa wszystkie elementy o zadanym kluczu. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_drzewo_a021882e4ebc72527f8e5dbc4bdbe6490}{\index{Drzewo@{Drzewo}!zlicz\-\_\-elementy@{zlicz\-\_\-elementy}}
+\index{zlicz\-\_\-elementy@{zlicz\-\_\-elementy}!Drzewo@{Drzewo}}
+\subsubsection[{zlicz\-\_\-elementy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class typ , class klucz , class wartosc $>$ int {\bf Drzewo}$<$ typ, klucz, wartosc $>$\-::zlicz\-\_\-elementy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_drzewo_a021882e4ebc72527f8e5dbc4bdbe6490}
+
+
+Metoda zlicz\-\_\-elementy. 
+
+Metoda podajaca ile elementow znajduje sie w drzewie. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{drzewo_8hh}{drzewo.\-hh}\end{DoxyCompactItemize}
