@@ -1,0 +1,178 @@
+\hypertarget{class_program}{\section{Program Class Reference}
+\label{class_program}\index{Program@{Program}}
+}
+
+
+Klasa \hyperlink{class_program}{Program}.  
+
+
+
+
+{\ttfamily \#include $<$program.\-hh$>$}
+
+Inheritance diagram for Program\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_program}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_program_aaef7fcaf64830eb231cbb9e887d705af}{zapisz\-\_\-dane} (char $\ast$nazwa)
+\begin{DoxyCompactList}\small\item\em Metoda zapisz\-\_\-dane. \end{DoxyCompactList}\item 
+void \hyperlink{class_program_a060ea3afebf696152d50135d20856e5a}{wypisz\-\_\-dane} ()
+\begin{DoxyCompactList}\small\item\em Metoda wypisz\-\_\-dane. \end{DoxyCompactList}\item 
+bool \hyperlink{class_program_ab5441e0e8ecd02ffeada4d77aaad2726}{porownaj\-\_\-dane} (char $\ast$nazwa)
+\begin{DoxyCompactList}\small\item\em Metoda porownaj\-\_\-dane. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_program_ac396401ba5cade863d0e6acb727bec4e}{wykonaj\-\_\-program} ()
+\begin{DoxyCompactList}\small\item\em Metoda wykonaj\-\_\-program. \end{DoxyCompactList}\item 
+clock\-\_\-t \hyperlink{class_program_ab68c69977637eb8cc05a57e176a21986}{zacznij\-\_\-pomiar\-\_\-czasu} ()
+\begin{DoxyCompactList}\small\item\em Metoda zacznij\-\_\-pomiar\-\_\-czasu. \end{DoxyCompactList}\item 
+clock\-\_\-t \hyperlink{class_program_a3515568f8df7224bfd8fd8b7b76ab0ba}{zakoncz\-\_\-pomiar\-\_\-czasu} ()
+\begin{DoxyCompactList}\small\item\em Metoda zakoncz\-\_\-pomiar\-\_\-czasu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_program_ac27fc896de0e4c87cc6a17290c0930ef}{\hyperlink{class_tablica}{Tablica} {\bfseries dane}}\label{class_program_ac27fc896de0e4c87cc6a17290c0930ef}
+
+\item 
+clock\-\_\-t \hyperlink{class_program_a8cdcc795adc329732f41b399044d0a5b}{czas\-\_\-rozpoczecia}
+\begin{DoxyCompactList}\small\item\em Zmienna czas\-\_\-rozpoczecia. \end{DoxyCompactList}\item 
+fstream \hyperlink{class_program_a532ceacb1d70da66142bab96a3eb0753}{plik\-\_\-wejsciowy}
+\begin{DoxyCompactList}\small\item\em Zmienna plik\-\_\-wejsciowy. \end{DoxyCompactList}\item 
+fstream \hyperlink{class_program_aaa305591a4333d799c8d353f3072d8e0}{plik\-\_\-wyjsciowy}
+\begin{DoxyCompactList}\small\item\em Zmienna plik\-\_\-wyjsciowy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa \hyperlink{class_program}{Program}. 
+
+Klasa odpowiedzialana za wykonanie operacji zwiazanych z pomiarem czasu oraz obsluge plikow, na ktorych wykonywane sa dzialania. Jest to klasa bazowa dla poszczegolnych algorytmow, ktorych metody moga zostac nadpisane. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_program_ab5441e0e8ecd02ffeada4d77aaad2726}{\index{Program@{Program}!porownaj\-\_\-dane@{porownaj\-\_\-dane}}
+\index{porownaj\-\_\-dane@{porownaj\-\_\-dane}!Program@{Program}}
+\subsubsection[{porownaj\-\_\-dane}]{\setlength{\rightskip}{0pt plus 5cm}bool Program\-::porownaj\-\_\-dane (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nazwa}
+\end{DoxyParamCaption}
+)}}\label{class_program_ab5441e0e8ecd02ffeada4d77aaad2726}
+
+
+Metoda porownaj\-\_\-dane. 
+
+Metoda porownujaca otrzymane dane ze spodziewanym wynikiem. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Wskaznik} & do pliku zawierajacego poprawny wynik obliczen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Metoda zwraca wartosc true jesli udalo sie otworzyc odpowiedni plik i dane sa zgodne z wynikajacymi z obliczen. W przeciwynym wypadku metoda zwraca wartosc false i wyswietla odpowiedni komunikat. 
+\end{DoxyReturn}
+\hypertarget{class_program_ac396401ba5cade863d0e6acb727bec4e}{\index{Program@{Program}!wykonaj\-\_\-program@{wykonaj\-\_\-program}}
+\index{wykonaj\-\_\-program@{wykonaj\-\_\-program}!Program@{Program}}
+\subsubsection[{wykonaj\-\_\-program}]{\setlength{\rightskip}{0pt plus 5cm}bool Program\-::wykonaj\-\_\-program (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_program_ac396401ba5cade863d0e6acb727bec4e}
+
+
+Metoda wykonaj\-\_\-program. 
+
+Metoda wykonujaca glowny algorytm programu. \begin{DoxyReturn}{Returns}
+Metoda zwraca wartosc false jesli nie zostala nadpisana inna metoda z klasy dziedziczacej i wyswietla odpowiedni komunikat. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_przykladowy__program_ab271b3df044dbd4451d0e631b3850406}{Przykladowy\-\_\-program}.
+
+\hypertarget{class_program_a060ea3afebf696152d50135d20856e5a}{\index{Program@{Program}!wypisz\-\_\-dane@{wypisz\-\_\-dane}}
+\index{wypisz\-\_\-dane@{wypisz\-\_\-dane}!Program@{Program}}
+\subsubsection[{wypisz\-\_\-dane}]{\setlength{\rightskip}{0pt plus 5cm}void Program\-::wypisz\-\_\-dane (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_program_a060ea3afebf696152d50135d20856e5a}
+
+
+Metoda wypisz\-\_\-dane. 
+
+Metoda, ktora wypisuje przetworzone dane na standardowym wyjsciu. \hypertarget{class_program_ab68c69977637eb8cc05a57e176a21986}{\index{Program@{Program}!zacznij\-\_\-pomiar\-\_\-czasu@{zacznij\-\_\-pomiar\-\_\-czasu}}
+\index{zacznij\-\_\-pomiar\-\_\-czasu@{zacznij\-\_\-pomiar\-\_\-czasu}!Program@{Program}}
+\subsubsection[{zacznij\-\_\-pomiar\-\_\-czasu}]{\setlength{\rightskip}{0pt plus 5cm}clock\-\_\-t Program\-::zacznij\-\_\-pomiar\-\_\-czasu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_program_ab68c69977637eb8cc05a57e176a21986}
+
+
+Metoda zacznij\-\_\-pomiar\-\_\-czasu. 
+
+Metoda zapisujaca czas rozpoczecia pomiaru w odpowiednim polu klasy. \begin{DoxyReturn}{Returns}
+Zwraca odczytany czas. 
+\end{DoxyReturn}
+\hypertarget{class_program_a3515568f8df7224bfd8fd8b7b76ab0ba}{\index{Program@{Program}!zakoncz\-\_\-pomiar\-\_\-czasu@{zakoncz\-\_\-pomiar\-\_\-czasu}}
+\index{zakoncz\-\_\-pomiar\-\_\-czasu@{zakoncz\-\_\-pomiar\-\_\-czasu}!Program@{Program}}
+\subsubsection[{zakoncz\-\_\-pomiar\-\_\-czasu}]{\setlength{\rightskip}{0pt plus 5cm}clock\-\_\-t Program\-::zakoncz\-\_\-pomiar\-\_\-czasu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_program_a3515568f8df7224bfd8fd8b7b76ab0ba}
+
+
+Metoda zakoncz\-\_\-pomiar\-\_\-czasu. 
+
+\begin{DoxyReturn}{Returns}
+Zwraca dlugosc czasu wykonania programu (ilosc taktow zegara podzielona przez preskaler). 
+\end{DoxyReturn}
+\hypertarget{class_program_aaef7fcaf64830eb231cbb9e887d705af}{\index{Program@{Program}!zapisz\-\_\-dane@{zapisz\-\_\-dane}}
+\index{zapisz\-\_\-dane@{zapisz\-\_\-dane}!Program@{Program}}
+\subsubsection[{zapisz\-\_\-dane}]{\setlength{\rightskip}{0pt plus 5cm}bool Program\-::zapisz\-\_\-dane (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nazwa}
+\end{DoxyParamCaption}
+)}}\label{class_program_aaef7fcaf64830eb231cbb9e887d705af}
+
+
+Metoda zapisz\-\_\-dane. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Wskaznik} & do nazwy pliku, pod ktorym ma zostac zapisany strumien wyjsciowy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zwraca 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_program_a8cdcc795adc329732f41b399044d0a5b}{\index{Program@{Program}!czas\-\_\-rozpoczecia@{czas\-\_\-rozpoczecia}}
+\index{czas\-\_\-rozpoczecia@{czas\-\_\-rozpoczecia}!Program@{Program}}
+\subsubsection[{czas\-\_\-rozpoczecia}]{\setlength{\rightskip}{0pt plus 5cm}clock\-\_\-t Program\-::czas\-\_\-rozpoczecia}}\label{class_program_a8cdcc795adc329732f41b399044d0a5b}
+
+
+Zmienna czas\-\_\-rozpoczecia. 
+
+Zawiera czas w ktorym zaczal wykonywac sie wlasciwy kod algorytmu (liczony od momentu uruchomienia programu). Do tej danej porownywany jest czas zakoczenia wykonywania algorytmu. \hypertarget{class_program_a532ceacb1d70da66142bab96a3eb0753}{\index{Program@{Program}!plik\-\_\-wejsciowy@{plik\-\_\-wejsciowy}}
+\index{plik\-\_\-wejsciowy@{plik\-\_\-wejsciowy}!Program@{Program}}
+\subsubsection[{plik\-\_\-wejsciowy}]{\setlength{\rightskip}{0pt plus 5cm}fstream Program\-::plik\-\_\-wejsciowy}}\label{class_program_a532ceacb1d70da66142bab96a3eb0753}
+
+
+Zmienna plik\-\_\-wejsciowy. 
+
+Zmienna przedstawiajaca otwarty plik jako strumien danych. \hypertarget{class_program_aaa305591a4333d799c8d353f3072d8e0}{\index{Program@{Program}!plik\-\_\-wyjsciowy@{plik\-\_\-wyjsciowy}}
+\index{plik\-\_\-wyjsciowy@{plik\-\_\-wyjsciowy}!Program@{Program}}
+\subsubsection[{plik\-\_\-wyjsciowy}]{\setlength{\rightskip}{0pt plus 5cm}fstream Program\-::plik\-\_\-wyjsciowy}}\label{class_program_aaa305591a4333d799c8d353f3072d8e0}
+
+
+Zmienna plik\-\_\-wyjsciowy. 
+
+Zmienna przedstawiajaca strumien danych po wykonaniu wlasiwego algorytmu. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{program_8hh}{program.\-hh}\item 
+src/\hyperlink{program_8cpp}{program.\-cpp}\end{DoxyCompactItemize}
