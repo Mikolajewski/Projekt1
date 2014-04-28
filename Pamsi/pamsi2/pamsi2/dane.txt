@@ -1,0 +1,4 @@
+3
+dane1.txt
+dane2.txt
+dane3.txt

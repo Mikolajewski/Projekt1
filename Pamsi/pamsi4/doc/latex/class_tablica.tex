@@ -1,0 +1,89 @@
+\hypertarget{class_tablica}{\section{Tablica Class Reference}
+\label{class_tablica}\index{Tablica@{Tablica}}
+}
+
+
+Klasa \hyperlink{class_program}{Program}.  
+
+
+
+
+{\ttfamily \#include $<$tablica.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tablica}{Tablica} \hyperlink{class_tablica_a2d776cbdc02ed70b045b2c680bfdb695}{operator=} (const \hyperlink{class_tablica}{Tablica} dane)
+\begin{DoxyCompactList}\small\item\em Przeciazenie operatora =. \end{DoxyCompactList}\item 
+\hypertarget{class_tablica_a5f484e7b0478e1ff9b62e894f9d7b28d}{\hyperlink{class_tablica_a5f484e7b0478e1ff9b62e894f9d7b28d}{Tablica} ()}\label{class_tablica_a5f484e7b0478e1ff9b62e894f9d7b28d}
+
+\begin{DoxyCompactList}\small\item\em Przeciazenie konstruktora bezparametrycznego. \end{DoxyCompactList}\item 
+\hypertarget{class_tablica_aee4b66a81059b6ef1881909cd9f344b4}{\hyperlink{class_tablica_aee4b66a81059b6ef1881909cd9f344b4}{Tablica} (int ilosc)}\label{class_tablica_aee4b66a81059b6ef1881909cd9f344b4}
+
+\begin{DoxyCompactList}\small\item\em Przeciazenie konstruktora parametrycznego. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tablica_a3864d3f5d0a339a496136e3546e71759}{operator==} (const \hyperlink{class_tablica}{Tablica} dane)
+\begin{DoxyCompactList}\small\item\em Przeciazenie operatora ==. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\hypertarget{union_tablica_1_1@0_a15feeb49d1b632313b0f85102261038d}{\>string $\ast$ {\bfseries napisy}\\
+\hypertarget{union_tablica_1_1@0_a9c67bc855a20899cc0eb7086ec96a745}{\>double $\ast$ {\bfseries tablica}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Zmienna tablica. \end{DoxyCompactList}\item 
+int \hyperlink{class_tablica_ab0d3e4210dc8a77e0f1c75834084c077}{dlugosc\-\_\-tablicy}
+\begin{DoxyCompactList}\small\item\em Zmienna dlugosc\-\_\-tablicy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa \hyperlink{class_program}{Program}. 
+
+Klasa w ktorej przechowywane sa dane oraz zawierajaca niektore metody na nich wykonywane. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tablica_a2d776cbdc02ed70b045b2c680bfdb695}{\index{Tablica@{Tablica}!operator=@{operator=}}
+\index{operator=@{operator=}!Tablica@{Tablica}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tablica} Tablica\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tablica}}]{dane}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_a2d776cbdc02ed70b045b2c680bfdb695}
+
+
+Przeciazenie operatora =. 
+
+Wykonuje przepisanie wartosci z jednej Tablicy do drugiej \hypertarget{class_tablica_a3864d3f5d0a339a496136e3546e71759}{\index{Tablica@{Tablica}!operator==@{operator==}}
+\index{operator==@{operator==}!Tablica@{Tablica}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Tablica\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tablica}}]{dane}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_a3864d3f5d0a339a496136e3546e71759}
+
+
+Przeciazenie operatora ==. 
+
+/return Zwraca wartosc true jesli Tablice sa zgodne. W przeciwnym wypadku wartosc false. 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_tablica_a52448ef22993bdc85475e124fe89e76a}{\subsubsection[{"@1}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \} }}\label{class_tablica_a52448ef22993bdc85475e124fe89e76a}
+
+
+Zmienna tablica. 
+
+Zawiera wskaznik do dynamicznie tworzonej tablicy, w ktorej przechowywane sa dane uprzednio wczytane z podanego pliku. \hypertarget{class_tablica_ab0d3e4210dc8a77e0f1c75834084c077}{\index{Tablica@{Tablica}!dlugosc\-\_\-tablicy@{dlugosc\-\_\-tablicy}}
+\index{dlugosc\-\_\-tablicy@{dlugosc\-\_\-tablicy}!Tablica@{Tablica}}
+\subsubsection[{dlugosc\-\_\-tablicy}]{\setlength{\rightskip}{0pt plus 5cm}int Tablica\-::dlugosc\-\_\-tablicy}}\label{class_tablica_ab0d3e4210dc8a77e0f1c75834084c077}
+
+
+Zmienna dlugosc\-\_\-tablicy. 
+
+Zawiera liczbe swiadczaco o dlugosci utworzonej tablicy dynamicznej. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{tablica_8hh}{tablica.\-hh}\item 
+src/\hyperlink{tablica_8cpp}{tablica.\-cpp}\end{DoxyCompactItemize}

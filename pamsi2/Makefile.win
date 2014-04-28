@@ -1,0 +1,38 @@
+# Project: Projekt1
+# Makefile created by Dev-C++ 5.4.1
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = src/main.o src/mnozenie.o src/program.o src/benchmark.o
+LINKOBJ  = src/main.o src/mnozenie.o src/program.o src/benchmark.o
+LIBS     = -L"C:/Program Files/Dev-Cpp/MinGW32/lib"
+INCS     = -I"C:/Program Files/Dev-Cpp/MinGW32/include" -I"C:/Program Files/Dev-Cpp/MinGW32/include" -I"C:/Documents and Settings/Tomek/Pulpit/eclipse programy/Wilhelm/inc"
+CXXINCS  = -I"C:/Program Files/Dev-Cpp/MinGW32/include" -I"C:/Program Files/Dev-Cpp/MinGW32/include" -I"C:/Documents and Settings/Tomek/Pulpit/pamsi2/inc"
+BIN      = Projekt1.exe
+CXXFLAGS = $(CXXINCS) -Wall -Wextra
+CFLAGS   = $(INCS) -Wall -Wextra
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+src/main.o: src/main.cpp 
+	$(CPP) -c src/main.cpp -o src/main.o $(CXXFLAGS)
+
+src/mnozenie.o: src/mnozenie.cpp 
+	$(CPP) -c src/mnozenie.cpp -o src/mnozenie.o $(CXXFLAGS)
+
+src/program.o: src/program.cpp 
+	$(CPP) -c src/program.cpp -o src/program.o $(CXXFLAGS)
+
+src/benchmark.o: src/benchmark.cpp 
+	$(CPP) -c src/benchmark.cpp -o src/benchmark.o $(CXXFLAGS)
