@@ -1,0 +1,206 @@
+\hypertarget{class_graf}{\section{Graf$<$ krawedz, wierzcholek $>$ Class Template Reference}
+\label{class_graf}\index{Graf$<$ krawedz, wierzcholek $>$@{Graf$<$ krawedz, wierzcholek $>$}}
+}
+
+
+Klasa \hyperlink{class_graf}{Graf}.  
+
+
+
+
+{\ttfamily \#include $<$graf.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_graf_aedd9dc4bb2be26426609805ad2e1f12b}{czy\+\_\+sasiad} (wierzcholek pierwszy, wierzcholek drugi)
+\begin{DoxyCompactList}\small\item\em czy\+\_\+sasiad \end{DoxyCompactList}\item 
+krawedz $\ast$ \hyperlink{class_graf_aa79b7d3bec96534f43fe363d75235b44}{sasiedztwo} (wierzcholek pole)
+\begin{DoxyCompactList}\small\item\em sasiedztwo \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_a1fee5055ad6af6078d5a0b0f623a8b5e}{dodaj\+\_\+wierzcholek} (wierzcholek pole)
+\begin{DoxyCompactList}\small\item\em dodaj\+\_\+wierzcholek \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_ae25fb0ebec90550f883029f3f8ec010a}{dodaj\+\_\+krawedz} (wierzcholek pierwszy, wierzcholek drugi, int waga)
+\begin{DoxyCompactList}\small\item\em dodaj\+\_\+krawedz \end{DoxyCompactList}\item 
+bool \hyperlink{class_graf_adbfdf992968717175944d844e929d3b8}{usun\+\_\+krawedz} (wierzcholek pierwszy, wierzcholek drugi)
+\begin{DoxyCompactList}\small\item\em usun\+\_\+krawedz \end{DoxyCompactList}\item 
+bool \hyperlink{class_graf_afe4ec99c6fcbe71b27025573427773c6}{usun\+\_\+wierzcholek} (wierzcholek pole)
+\begin{DoxyCompactList}\small\item\em usun\+\_\+wierzcholek \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_a7c1d929e180d33087ca774ce1c2c2ff5}{depth\+\_\+first\+\_\+search} (wierzcholek poczatek)
+\begin{DoxyCompactList}\small\item\em depth\+\_\+first\+\_\+search \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_ab34f72112bc953a148e51eb479222797}{anty\+\_\+depth\+\_\+first\+\_\+search} (wierzcholek poczatek)
+\begin{DoxyCompactList}\small\item\em anty\+\_\+depth\+\_\+first\+\_\+search \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_aee3970f1a56eb53223f30d0ae48ef612}{breadth\+\_\+first\+\_\+search} (wierzcholek poczatek)
+\begin{DoxyCompactList}\small\item\em breadth\+\_\+first\+\_\+search \end{DoxyCompactList}\item 
+\hyperlink{class_graf_abc168cfda60ca1af9ea6b519b368cdcb}{Graf} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor grafu. \end{DoxyCompactList}\item 
+int \hyperlink{class_graf_a06d0a3918059f517745474009d914300}{zwroc\+\_\+odwiedzonych} ()
+\begin{DoxyCompactList}\small\item\em zwroc\+\_\+odwiedzonych \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_a4b4c691cb70c87ddd066840e397b7212}{wypisz} ()
+\begin{DoxyCompactList}\small\item\em wypisz \end{DoxyCompactList}\item 
+int \hyperlink{class_graf_ade1cb15f2ea58de66f3d93d1677d8103}{ilosc\+\_\+krawedzi} ()
+\begin{DoxyCompactList}\small\item\em ilosc\+\_\+krawedzi \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class krawedz, class wierzcholek$>$class Graf$<$ krawedz, wierzcholek $>$}
+
+Klasa \hyperlink{class_graf}{Graf}. 
+
+Klasa zawierajaca strukture grafu. W sklad klasy wchodza metody wykonujace operacje na grafie m.\+in. przeszukania grafu. \hyperlink{class_graf}{Graf} jest oparty na tablicy z hashowaniem. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_graf_abc168cfda60ca1af9ea6b519b368cdcb}{\index{Graf@{Graf}!Graf@{Graf}}
+\index{Graf@{Graf}!Graf@{Graf}}
+\subsubsection[{Graf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ {\bf Graf}$<$ krawedz, wierzcholek $>$\+::{\bf Graf} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graf_abc168cfda60ca1af9ea6b519b368cdcb}
+
+
+Konstruktor grafu. 
+
+Przeciazenie konstruktora wpisujace do pola odwiedzone wartosc 0. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_graf_ab34f72112bc953a148e51eb479222797}{\index{Graf@{Graf}!anty\+\_\+depth\+\_\+first\+\_\+search@{anty\+\_\+depth\+\_\+first\+\_\+search}}
+\index{anty\+\_\+depth\+\_\+first\+\_\+search@{anty\+\_\+depth\+\_\+first\+\_\+search}!Graf@{Graf}}
+\subsubsection[{anty\+\_\+depth\+\_\+first\+\_\+search}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ void {\bf Graf}$<$ krawedz, wierzcholek $>$\+::anty\+\_\+depth\+\_\+first\+\_\+search (
+\begin{DoxyParamCaption}
+\item[{wierzcholek}]{poczatek}
+\end{DoxyParamCaption}
+)}}\label{class_graf_ab34f72112bc953a148e51eb479222797}
+
+
+anty\+\_\+depth\+\_\+first\+\_\+search 
+
+Metoda usuwajaca znaczniki powstale po wywolaniu funkcji depth\+\_\+first\+\_\+search. Zeruje ona rowniez pole odwiedzone w celu powtornego wykorzystania. \hypertarget{class_graf_aee3970f1a56eb53223f30d0ae48ef612}{\index{Graf@{Graf}!breadth\+\_\+first\+\_\+search@{breadth\+\_\+first\+\_\+search}}
+\index{breadth\+\_\+first\+\_\+search@{breadth\+\_\+first\+\_\+search}!Graf@{Graf}}
+\subsubsection[{breadth\+\_\+first\+\_\+search}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ void {\bf Graf}$<$ krawedz, wierzcholek $>$\+::breadth\+\_\+first\+\_\+search (
+\begin{DoxyParamCaption}
+\item[{wierzcholek}]{poczatek}
+\end{DoxyParamCaption}
+)}}\label{class_graf_aee3970f1a56eb53223f30d0ae48ef612}
+
+
+breadth\+\_\+first\+\_\+search 
+
+Metoda wykonujaca przeszukanie wszerz. Wpisuje ona rowniez odleglosc od poczatkowego elementu do poszczegolnych pol. \hypertarget{class_graf_aedd9dc4bb2be26426609805ad2e1f12b}{\index{Graf@{Graf}!czy\+\_\+sasiad@{czy\+\_\+sasiad}}
+\index{czy\+\_\+sasiad@{czy\+\_\+sasiad}!Graf@{Graf}}
+\subsubsection[{czy\+\_\+sasiad}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ bool {\bf Graf}$<$ krawedz, wierzcholek $>$\+::czy\+\_\+sasiad (
+\begin{DoxyParamCaption}
+\item[{wierzcholek}]{pierwszy, }
+\item[{wierzcholek}]{drugi}
+\end{DoxyParamCaption}
+)}}\label{class_graf_aedd9dc4bb2be26426609805ad2e1f12b}
+
+
+czy\+\_\+sasiad 
+
+Metoda sprawdzajaca czy dwa wybrane wierzcholki sa sasiadami. \hypertarget{class_graf_a7c1d929e180d33087ca774ce1c2c2ff5}{\index{Graf@{Graf}!depth\+\_\+first\+\_\+search@{depth\+\_\+first\+\_\+search}}
+\index{depth\+\_\+first\+\_\+search@{depth\+\_\+first\+\_\+search}!Graf@{Graf}}
+\subsubsection[{depth\+\_\+first\+\_\+search}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ void {\bf Graf}$<$ krawedz, wierzcholek $>$\+::depth\+\_\+first\+\_\+search (
+\begin{DoxyParamCaption}
+\item[{wierzcholek}]{poczatek}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a7c1d929e180d33087ca774ce1c2c2ff5}
+
+
+depth\+\_\+first\+\_\+search 
+
+Metoda wykonujaca przeszukanie struktury. Wpisuje ona liczbe znalezionych elementow do pola odwiedzone co pozwala ocenic z iloma wierzcholkami jest polaczony dany element. \hypertarget{class_graf_ae25fb0ebec90550f883029f3f8ec010a}{\index{Graf@{Graf}!dodaj\+\_\+krawedz@{dodaj\+\_\+krawedz}}
+\index{dodaj\+\_\+krawedz@{dodaj\+\_\+krawedz}!Graf@{Graf}}
+\subsubsection[{dodaj\+\_\+krawedz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ void {\bf Graf}$<$ krawedz, wierzcholek $>$\+::dodaj\+\_\+krawedz (
+\begin{DoxyParamCaption}
+\item[{wierzcholek}]{pierwszy, }
+\item[{wierzcholek}]{drugi, }
+\item[{int}]{waga}
+\end{DoxyParamCaption}
+)}}\label{class_graf_ae25fb0ebec90550f883029f3f8ec010a}
+
+
+dodaj\+\_\+krawedz 
+
+Metoda dodajaca krawedz wraz z waga. Tworzy ona polaczenia w obie strony pomiedzy elementami. \hypertarget{class_graf_a1fee5055ad6af6078d5a0b0f623a8b5e}{\index{Graf@{Graf}!dodaj\+\_\+wierzcholek@{dodaj\+\_\+wierzcholek}}
+\index{dodaj\+\_\+wierzcholek@{dodaj\+\_\+wierzcholek}!Graf@{Graf}}
+\subsubsection[{dodaj\+\_\+wierzcholek}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ void {\bf Graf}$<$ krawedz, wierzcholek $>$\+::dodaj\+\_\+wierzcholek (
+\begin{DoxyParamCaption}
+\item[{wierzcholek}]{pole}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a1fee5055ad6af6078d5a0b0f623a8b5e}
+
+
+dodaj\+\_\+wierzcholek 
+
+Metoda dodajaca wierzcholek. Jest to metoda wymuszona przez zalozenia projektowe i malo uzyteczna w wypadku zastasowania listy krawedzi. Zakladane jest ze element graniczy sam ze soba. \hypertarget{class_graf_ade1cb15f2ea58de66f3d93d1677d8103}{\index{Graf@{Graf}!ilosc\+\_\+krawedzi@{ilosc\+\_\+krawedzi}}
+\index{ilosc\+\_\+krawedzi@{ilosc\+\_\+krawedzi}!Graf@{Graf}}
+\subsubsection[{ilosc\+\_\+krawedzi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ int {\bf Graf}$<$ krawedz, wierzcholek $>$\+::ilosc\+\_\+krawedzi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graf_ade1cb15f2ea58de66f3d93d1677d8103}
+
+
+ilosc\+\_\+krawedzi 
+
+Metoda wypisujaca ilosc krawedzi \hypertarget{class_graf_aa79b7d3bec96534f43fe363d75235b44}{\index{Graf@{Graf}!sasiedztwo@{sasiedztwo}}
+\index{sasiedztwo@{sasiedztwo}!Graf@{Graf}}
+\subsubsection[{sasiedztwo}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ krawedz $\ast$ {\bf Graf}$<$ krawedz, wierzcholek $>$\+::sasiedztwo (
+\begin{DoxyParamCaption}
+\item[{wierzcholek}]{pole}
+\end{DoxyParamCaption}
+)}}\label{class_graf_aa79b7d3bec96534f43fe363d75235b44}
+
+
+sasiedztwo 
+
+Metoda wyswietlajaca wszystkich sasiadow zadanego wierzcholka. \hypertarget{class_graf_adbfdf992968717175944d844e929d3b8}{\index{Graf@{Graf}!usun\+\_\+krawedz@{usun\+\_\+krawedz}}
+\index{usun\+\_\+krawedz@{usun\+\_\+krawedz}!Graf@{Graf}}
+\subsubsection[{usun\+\_\+krawedz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ bool {\bf Graf}$<$ krawedz, wierzcholek $>$\+::usun\+\_\+krawedz (
+\begin{DoxyParamCaption}
+\item[{wierzcholek}]{pierwszy, }
+\item[{wierzcholek}]{drugi}
+\end{DoxyParamCaption}
+)}}\label{class_graf_adbfdf992968717175944d844e929d3b8}
+
+
+usun\+\_\+krawedz 
+
+Metoda usuwajaca zadana krawedz. \hypertarget{class_graf_afe4ec99c6fcbe71b27025573427773c6}{\index{Graf@{Graf}!usun\+\_\+wierzcholek@{usun\+\_\+wierzcholek}}
+\index{usun\+\_\+wierzcholek@{usun\+\_\+wierzcholek}!Graf@{Graf}}
+\subsubsection[{usun\+\_\+wierzcholek}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ bool {\bf Graf}$<$ krawedz, wierzcholek $>$\+::usun\+\_\+wierzcholek (
+\begin{DoxyParamCaption}
+\item[{wierzcholek}]{pole}
+\end{DoxyParamCaption}
+)}}\label{class_graf_afe4ec99c6fcbe71b27025573427773c6}
+
+
+usun\+\_\+wierzcholek 
+
+Metoda usuwajaca wyszystkie krawedzie \char`\"{}wychodzace\char`\"{} i \char`\"{}wchodzace\char`\"{} do wierzcholka. \hypertarget{class_graf_a4b4c691cb70c87ddd066840e397b7212}{\index{Graf@{Graf}!wypisz@{wypisz}}
+\index{wypisz@{wypisz}!Graf@{Graf}}
+\subsubsection[{wypisz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ void {\bf Graf}$<$ krawedz, wierzcholek $>$\+::wypisz (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a4b4c691cb70c87ddd066840e397b7212}
+
+
+wypisz 
+
+Metoda wypisujaca strukture \hypertarget{class_graf_a06d0a3918059f517745474009d914300}{\index{Graf@{Graf}!zwroc\+\_\+odwiedzonych@{zwroc\+\_\+odwiedzonych}}
+\index{zwroc\+\_\+odwiedzonych@{zwroc\+\_\+odwiedzonych}!Graf@{Graf}}
+\subsubsection[{zwroc\+\_\+odwiedzonych}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ int {\bf Graf}$<$ krawedz, wierzcholek $>$\+::zwroc\+\_\+odwiedzonych (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graf_a06d0a3918059f517745474009d914300}
+
+
+zwroc\+\_\+odwiedzonych 
+
+Metoda zwracajaca ilosc odwiedzonych pol podczas przeszukiwania. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{graf_8hh}{graf.\+hh}\end{DoxyCompactItemize}
