@@ -1,0 +1,208 @@
+\documentclass[12pt,a4paper,titlepage]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\selectlanguage{polish}
+
+\setlength{\parindent}{5mm} %ustawi rozmiar wcie˛cia na pocza˛tku kaz˙dego akapitu na 0mm,
+\setlength{\parskip}{4mm}	%
+
+\title{Sprawozdanie z ćwiczenia laboratoryjnego}
+\date{2014}
+\author{Tomasz Mikołajewski }
+
+\begin{document}
+\maketitle
+\pagestyle{empty}
+%\pagestyle{headings}
+\tableofcontents
+
+\section{Wprowadzenie}
+Niniejszy dokument powstał w ramach przedmiotu Projektowanie Algorytmów i Metod Sztucznej Inteligencji. Jest on rezultatem przeprowadzonych ćwiczeń w laboratorium oraz pracy wykonanej w domu.
+
+
+Ćwiczenie polegało na przeprowadzeniu analizy złożoności algorytmów sortowania. Podczas tekstu sprawdzano algorytmy: szybkiego sortowania, sortowania przez kopcowanie oraz przez scalanie. Podczas wykonywania czynności sortowania liczony był czas wykonania operacji. Testowanie powtarzano wielokrotnie, aby uzyskać ilość danych pozwalającą na wyznaczenie przybliżonej funkcji opisującej złożoność algorytmu. 
+
+\section{Kod programu}
+Program został oparty o wcześniej stworzone pliki zawierające kod potrzebny do wykonania \textit {benchmark-u} podprogramu, czyli określenia czasu jaki potrzebny jest na jego wykonanie. Główny program zawiera funkcję otwierającą pliki z danymi oraz zapisującą rezultat operacji do pliku. Zdecydowanie ułatwia to prace przy analizie zadanego algorytmu.
+
+Algorytmy, które były testowane to sortowanie:
+\begin{itemize}
+\item szybkie
+\item przez scalanie 
+\item przez kopcowanie
+\end{itemize}
+
+
+\section{Pomiary}
+Pomiary zostały przeprowadzone na dużych plikach zawierających zmienne typu \textit {double}. Każdy z algorytmów był testowany dla co najmniej 5 różnych rozmiarach problemów powtórzonych dla dwóch różnych plików. Aby otrzymać rzetelny pomiar, każdy z testów był przeprowadzony 3-krotnie. Oznacza to iż każdy z algorytmów był testowany co najmniej 30 razy. 
+
+\section{Wyniki pomiarów}
+Po przeprowadzeniu serii pomiarów otrzymano wyniki przedstawione w tabelach. Na podstawie wyników utworzono wykresy zamieszczone poniżej.
+
+
+\subsection{Algorytm sortowania szybkiego}
+Jest to algorytm wykorzystujący rekurencję i działający według zasady dziel i zwyciężaj. Jest bardzo często stosowany ponieważ jego implementacja jest stosunkowo prosta, a należy do jednych z najszybszych algorytmów.
+
+
+\subsubsection{Losowe liczby-sortowanie szybkie}
+Doświadczenie zostało przeprowadzone z użyciem sekwencji liczb wygenerowanych w celu sprawdzenia algorytmu.
+
+\begin{center}
+\begin {tabular}{|c|c|c|c|c|}\hline
+Wielkosc & 1 & 2 & 3 & Średnia \\\hline
+10000000&2,531&2,609&2,562&2,567\\\hline
+10000000&2,484&2,437&2,453&2,458\\\hline
+5000000&1,219&1,234&1,219&1,224\\\hline
+5000000&1,235&1,188&1,219&1,214\\\hline
+1000000&0,219&0,218&0,266&0,234\\\hline
+1000000&0,203&0,235&0,219&0,219\\\hline
+800000&0,172&0,171&0,172&0,172\\\hline
+800000&0,172&0,172&0,172&0,172\\\hline
+100000&0,015&0,015&0,015&0,015\\\hline
+100000&0,016&0,031&0,016&0,021\\\hline
+\end{tabular}
+\end {center}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{szybkie.png}
+\caption{Przypadkowe ustawienie liczb}
+\end{center}
+\end{figure}
+
+\subsubsection{Wersja pesymistyczna i optymistyczna-szybkie}
+Doświadczenie przeprowadzone w celu sprawdzenia działania algorytmu w skrajnych przypadkach. Jak widać na wykresie zachodzi znacząca różnica pomiędzy przypadkami skrajnymi.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{szybkie2.png}
+\caption{Porównanie przypadków}
+\end{center}
+\end{figure}
+
+\subsubsection{Ulepszenie algorytmu sortowania}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{rozne.png}
+\caption{Różne algorytmy}
+\label{rozne}
+\end{center}
+\end{figure}
+
+
+W celu zmniejszenia złożoności obliczeniowej zastosowano algorytm polegający na wybieraniu elementu średniego jako elementu porównawczego. Porównyawne były trzy wartości: początkowa, środkowa i końcowa, następnie jeśli zachodziła taka potrzeba dokonywano zamiany elementów. Jak widać na załączonym wykresie \ref{rozne} algorytm spełnił swoje zadanie zmniejszając złożoność obliczeniową.
+
+\newpage
+\newpage
+\subsection{Algorytm sortowania przez scalanie}
+Algorytm ten rozkłada tablicę bądź listę na pojedyncze elementy, które z definicji muszą być posortowane, a następnie składa posortowane fragmenty aż do otrzymania pełnej posortowanej tablicy.
+
+
+\subsubsection{Losowe liczby-scalanie}
+Doświadczenie zostało przeprowadzone z użyciem sekwencji liczb wygenerowanych w celu sprawdzenia algorytmu.
+
+\begin{center}
+\begin {tabular}{|c|c|c|c|c|}\hline
+Wielkosc & 1 & 2 & 3 & Średnia \\\hline
+10000000&24,344&7,047&7,016&12,802\\\hline
+10000000&33,859&25,328&7,062&22,083\\\hline
+5000000&24,172&12,766&21,75&19,563\\\hline
+5000000&24,843&27,562&28,453&26,953\\\hline
+1000000&3,125&4,813&4,312&4,083\\\hline
+1000000&4,14&3,343&2,812&3,432\\\hline
+800000&2,438&3,234&2,719&2,797\\\hline
+800000&2,969&3,344&3,766&3,360\\\hline
+100000&0,078&0,078&0,578&0,245\\\hline
+100000&0,093&0,063&0,579&0,245\\\hline
+\end{tabular}
+\end {center}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{scalanie.png}
+\caption{Przypadkowe ustawienie liczb}
+\end{center}
+\end{figure}
+
+\subsubsection{Wersja pesymistyczna i optymistyczna-scalanie}
+Doświadczenie przeprowadzone w celu sprawdzenia działania algorytmu w skrajnych przypadkach.
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{scalanie2.png}
+\caption{Porównanie przypadków}
+\end{center}
+\end{figure}
+
+
+\newpage
+\subsection{Algorytm sortowania przez kopcowanie}
+Jest to algorytm rozkładający tablicę na strukturę zwaną kopcem. Powstaje ona poprzez porządkowanie elementów w strukturę hierarchiczną. Na szczycie kopca znajdują się elementy o największej wadzę, a poniżej nich mniej znaczące. Z tak powstałego kopca przenosi się element umiejscowiony na samym szczycie do tablicy w której wszystkie obiekty będą już posortowane.
+
+\subsubsection{Losowe liczby-kopcowanie}
+Doświadczenie zostało przeprowadzone z użyciem sekwencji liczb wygenerowanych w celu sprawdzenia algorytmu.
+
+\begin{center}
+\begin {tabular}{|c|c|c|c|c|}\hline
+Wielkosc & 1 & 2 & 3 & Średnia \\\hline
+10000000&6,562&6,375&6,375&6,437\\\hline
+10000000&6,157&6,766&7,203&6,709\\\hline
+5000000&3&3,343&3,032&3,125\\\hline
+5000000&2,859&2,797&2,812&2,823\\\hline
+1000000&0,625&0,531&0,547&0,568\\\hline
+1000000&0,5&0,516&0,531&0,516\\\hline
+800000&0,422&0,562&0,437&0,474\\\hline
+800000&0,406&0,422&0,406&0,411\\\hline
+100000&0,047&0,062&0,031&0,047\\\hline
+100000&0,078&0,032&0,031&0,047\\\hline
+\end{tabular}
+\end {center}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{kopcowanie.png}
+\caption{Przypadkowe ustawienie liczb}
+\end{center}
+\end{figure}
+
+\subsubsection{Wersja pesymistyczna i optymistyczna-kopcowanie}
+Doświadczenie przeprowadzone w celu sprawdzenia działania algorytmu w skrajnych przypadkach.
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{kopcowanie2.png}
+\caption{Porównanie przypadków}
+\end{center}
+\end{figure}
+
+\newpage
+\subsection{Porównanie algorytmów}
+W ramach porównania algorytmów przedstawiono wszystkie dane na jednym wykresie.
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{porownanie.png}
+\end{center}
+\end{figure}
+
+Jak widać na załączonym wykresie przedstawione algorytmy sortowanie cechują się podobną złożonością obliczeniową. Wraz ze wzrostem ilości elementów, ilość potrzebnego czasu rośnie podobnie dla każdego z algorytmów. Jednakże podczas działania programu istotny również jest czas potrzebny na wykonanie pojedynczych operacji sortowania, a w tym wypadku najbardziej skuteczny okazuje się algorytm sortowania szybkiego.
+
+\newpage
+\section{Wnioski}
+Na podstawie danych i wykresów można wyciągnąć następujące wnioski:
+\begin{itemize}
+\item wszystkie przedstawione algorytmy posiadają podobną złożoność obliczeniową
+\item z pominięciem wersji pesymistycznej wszystkie testowane algorytmy mają złożoność obliczeniową klasy N*log(N)
+\item nie tylko klasa złożoności obliczeniowej wpływa na czas realizacji algorytmu
+\item sortowanie przez kopcowanie oraz sortowanie szybkie posiadają dodatkową zaletę, ponieważ są to sortowania wykonywane w miejscu, czyli nie potrzebują dużych zasobów pamięci.
+\item sortowanie szybkie okazało się najbardziej efektywne (przy założeniu o pomijaniu wersji pesymistycznej).
+\item podczas realizacji ćwiczenia pozyskano informację na temat stabilności wykonanych sortowań. Okazało się, że jedynie kopcowanie przez scalanie jest stabilne, co oznacza że nie zamienia dwóch elementów o takiej samej wartości, ze względu na którą przeprowadza się sortowanie.
+\item algorytm sortowania przez scalanie okazał się bardzo prosty w modyfikacji dzięki czemu było możliwe tworzenie struktur posortowanych odwrotnie
+\item zauważono znaczną różnicę przy różnych ustawieniach liczb, ale tylko przy sortowaniu szybkim. W najgorszym wypadku algorytm osiąga złożoność N*N zamiast N*log(N), ale istnieją metody, aby uniknąć tak dużej złożoności obliczeniowej.
+\end{itemize}
+
+\end{document}

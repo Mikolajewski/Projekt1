@@ -1,0 +1,133 @@
+\hypertarget{class_komunikacja}{\section{Komunikacja Class Reference}
+\label{class_komunikacja}\index{Komunikacja@{Komunikacja}}
+}
+
+
+Klasa \hyperlink{class_komunikacja}{Komunikacja}.  
+
+
+
+
+{\ttfamily \#include $<$komunikacja.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_komunikacja_a22554e7095eccc02f899a5022382fe0e}{pytanie\-\_\-tak\-\_\-nie} ()
+\begin{DoxyCompactList}\small\item\em Metoda pytanie\-\_\-tak\-\_\-nie. \end{DoxyCompactList}\item 
+bool \hyperlink{class_komunikacja_a94497dd3cdaa7f52355e8edb0ca854b4}{wczytaj\-\_\-klucze\-\_\-i\-\_\-dane} (\hyperlink{class_tablica}{Tablica} \&dane, string nazwa)
+\begin{DoxyCompactList}\small\item\em Metoda wczytaj\-\_\-klucze\-\_\-i\-\_\-dane. \end{DoxyCompactList}\item 
+bool \hyperlink{class_komunikacja_a584a632826e92cf838e64368b8abbe05}{wczytaj\-\_\-inty\-\_\-do\-\_\-tablicy} (\hyperlink{class_tablica}{Tablica} \&dane, string nazwa)
+\begin{DoxyCompactList}\small\item\em Metoda wczytaj\-\_\-inty\-\_\-do\-\_\-tablicy. \end{DoxyCompactList}\item 
+bool \hyperlink{class_komunikacja_a72e1facbd11615a383ed799d490aed52}{wczytaj\-\_\-stringi\-\_\-do\-\_\-tablicy} (\hyperlink{class_tablica}{Tablica} \&dane, string nazwa)
+\begin{DoxyCompactList}\small\item\em Metoda wczytaj\-\_\-stringi\-\_\-do\-\_\-tablicy. \end{DoxyCompactList}\item 
+int \hyperlink{class_komunikacja_a28d01913291afd05c5069182fd29506b}{pobierz\-\_\-int} ()
+\begin{DoxyCompactList}\small\item\em Metoda pobierz\-\_\-int. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa \hyperlink{class_komunikacja}{Komunikacja}. 
+
+Klasa odpowiedzialna za komunikacje pomiedzy program, a swiatem zewnetrznym (wpisywanymi tekstami na std\-:in oraz otwieranymi plikami) 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_komunikacja_a28d01913291afd05c5069182fd29506b}{\index{Komunikacja@{Komunikacja}!pobierz\-\_\-int@{pobierz\-\_\-int}}
+\index{pobierz\-\_\-int@{pobierz\-\_\-int}!Komunikacja@{Komunikacja}}
+\subsubsection[{pobierz\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int Komunikacja\-::pobierz\-\_\-int (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_komunikacja_a28d01913291afd05c5069182fd29506b}
+
+
+Metoda pobierz\-\_\-int. 
+
+Pobiera wartosci ze standardowego wejscia i sprawdza czy jest to liczba int \begin{DoxyReturn}{Returns}
+Jesli wpisano wartosc int to jest ona zwracana przez funkcje. Jesli nie wyswietlany jest odpowieni komunikat i czynnosci sa powtarzane. 
+\end{DoxyReturn}
+\hypertarget{class_komunikacja_a22554e7095eccc02f899a5022382fe0e}{\index{Komunikacja@{Komunikacja}!pytanie\-\_\-tak\-\_\-nie@{pytanie\-\_\-tak\-\_\-nie}}
+\index{pytanie\-\_\-tak\-\_\-nie@{pytanie\-\_\-tak\-\_\-nie}!Komunikacja@{Komunikacja}}
+\subsubsection[{pytanie\-\_\-tak\-\_\-nie}]{\setlength{\rightskip}{0pt plus 5cm}bool Komunikacja\-::pytanie\-\_\-tak\-\_\-nie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_komunikacja_a22554e7095eccc02f899a5022382fe0e}
+
+
+Metoda pytanie\-\_\-tak\-\_\-nie. 
+
+Metoda wykorzystywana do sprawdzania czy urzydkownik odpowiedzial poprawnie. \begin{DoxyReturn}{Returns}
+Zwraca wartosc true jesli odpowiedz jest \char`\"{}tak\char`\"{} lub false gdy odpowiedz jest \char`\"{}nie\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{class_komunikacja_a584a632826e92cf838e64368b8abbe05}{\index{Komunikacja@{Komunikacja}!wczytaj\-\_\-inty\-\_\-do\-\_\-tablicy@{wczytaj\-\_\-inty\-\_\-do\-\_\-tablicy}}
+\index{wczytaj\-\_\-inty\-\_\-do\-\_\-tablicy@{wczytaj\-\_\-inty\-\_\-do\-\_\-tablicy}!Komunikacja@{Komunikacja}}
+\subsubsection[{wczytaj\-\_\-inty\-\_\-do\-\_\-tablicy}]{\setlength{\rightskip}{0pt plus 5cm}bool Komunikacja\-::wczytaj\-\_\-inty\-\_\-do\-\_\-tablicy (
+\begin{DoxyParamCaption}
+\item[{{\bf Tablica} \&}]{dane, }
+\item[{string}]{nazwa}
+\end{DoxyParamCaption}
+)}}\label{class_komunikacja_a584a632826e92cf838e64368b8abbe05}
+
+
+Metoda wczytaj\-\_\-inty\-\_\-do\-\_\-tablicy. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \hyperlink{class_tablica}{Tablica}} & do ktorej zostana wpisane liczby \\
+\hline
+\mbox{\tt in}  & {\em Nazwa} & pliku ktory zostanie otwarty \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zwraca wartosc true jesli zapis sie udal. Jesli nie zwracana jest wartosc false i odpowieni komunikat. 
+\end{DoxyReturn}
+\hypertarget{class_komunikacja_a94497dd3cdaa7f52355e8edb0ca854b4}{\index{Komunikacja@{Komunikacja}!wczytaj\-\_\-klucze\-\_\-i\-\_\-dane@{wczytaj\-\_\-klucze\-\_\-i\-\_\-dane}}
+\index{wczytaj\-\_\-klucze\-\_\-i\-\_\-dane@{wczytaj\-\_\-klucze\-\_\-i\-\_\-dane}!Komunikacja@{Komunikacja}}
+\subsubsection[{wczytaj\-\_\-klucze\-\_\-i\-\_\-dane}]{\setlength{\rightskip}{0pt plus 5cm}bool Komunikacja\-::wczytaj\-\_\-klucze\-\_\-i\-\_\-dane (
+\begin{DoxyParamCaption}
+\item[{{\bf Tablica} \&}]{dane, }
+\item[{string}]{nazwa}
+\end{DoxyParamCaption}
+)}}\label{class_komunikacja_a94497dd3cdaa7f52355e8edb0ca854b4}
+
+
+Metoda wczytaj\-\_\-klucze\-\_\-i\-\_\-dane. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \hyperlink{class_tablica}{Tablica}} & do ktorej zostana wpisane pary liczba-\/klucz \\
+\hline
+\mbox{\tt in}  & {\em Nazwa} & pliku ktory zostanie otwarty \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zwraca wartosc true jesli zapis sie udal. Jesli nie zwracana jest wartosc false i odpowieni komunikat. 
+\end{DoxyReturn}
+\hypertarget{class_komunikacja_a72e1facbd11615a383ed799d490aed52}{\index{Komunikacja@{Komunikacja}!wczytaj\-\_\-stringi\-\_\-do\-\_\-tablicy@{wczytaj\-\_\-stringi\-\_\-do\-\_\-tablicy}}
+\index{wczytaj\-\_\-stringi\-\_\-do\-\_\-tablicy@{wczytaj\-\_\-stringi\-\_\-do\-\_\-tablicy}!Komunikacja@{Komunikacja}}
+\subsubsection[{wczytaj\-\_\-stringi\-\_\-do\-\_\-tablicy}]{\setlength{\rightskip}{0pt plus 5cm}bool Komunikacja\-::wczytaj\-\_\-stringi\-\_\-do\-\_\-tablicy (
+\begin{DoxyParamCaption}
+\item[{{\bf Tablica} \&}]{dane, }
+\item[{string}]{nazwa}
+\end{DoxyParamCaption}
+)}}\label{class_komunikacja_a72e1facbd11615a383ed799d490aed52}
+
+
+Metoda wczytaj\-\_\-stringi\-\_\-do\-\_\-tablicy. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \hyperlink{class_tablica}{Tablica}} & do ktorej zostana wpisane napisy. \\
+\hline
+\mbox{\tt in}  & {\em Nazwa} & pliku ktory zostanie otwarty. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zwraca wartosc true jesli zapis sie udal. Jesli nie zwracana jest wartosc false i odpowieni komunikat. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{komunikacja_8hh}{komunikacja.\-hh}\item 
+src/\hyperlink{komunikacja_8cpp}{komunikacja.\-cpp}\end{DoxyCompactItemize}
