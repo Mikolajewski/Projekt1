@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['klucze',['klucze',['../class_tablica.html#a86dbdede5dfd94c3ff34e35213ba4ff2',1,'Tablica']]],
-  ['komunikacja',['Komunikacja',['../class_komunikacja.html',1,'']]],
-  ['komunikacja_2ecpp',['komunikacja.cpp',['../komunikacja_8cpp.html',1,'']]],
-  ['komunikacja_2ehh',['komunikacja.hh',['../komunikacja_8hh.html',1,'']]]
+  ['ilosc_5fdanych',['ilosc_danych',['../class_stos__lub__kolejka.html#a1a93d8c833d23302598430ddf03a3d06',1,'Stos_lub_kolejka']]],
+  ['ilosc_5fkrawedzi',['ilosc_krawedzi',['../class_graf.html#ade1cb15f2ea58de66f3d93d1677d8103',1,'Graf']]],
+  ['is_5fempty',['is_empty',['../class_stos__lub__kolejka.html#ae3ed97741c87e68ab828989140b6cf6e',1,'Stos_lub_kolejka']]]
 ];

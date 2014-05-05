@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['tablica',['Tablica',['../class_tablica.html#a5f484e7b0478e1ff9b62e894f9d7b28d',1,'Tablica::Tablica()'],['../class_tablica.html#aee4b66a81059b6ef1881909cd9f344b4',1,'Tablica::Tablica(int ilosc)']]],
-  ['tablica_5fhash',['Tablica_hash',['../class_tablica__hash.html#a71cfb5cb24ff2639b880da0b6126f256',1,'Tablica_hash']]]
+  ['pobierz_5fint',['pobierz_int',['../class_komunikacja.html#a28d01913291afd05c5069182fd29506b',1,'Komunikacja']]],
+  ['pop',['pop',['../class_stos__lub__kolejka.html#a3d511f510942d9f0ac52a1fedee9100b',1,'Stos_lub_kolejka']]],
+  ['porownaj_5fdane',['porownaj_dane',['../class_program.html#ab5441e0e8ecd02ffeada4d77aaad2726',1,'Program']]],
+  ['przepisz_5fdane',['przepisz_dane',['../class_element.html#aacd6653f0fa6475a8b2e122dddf80627',1,'Element']]],
+  ['push',['push',['../class_stos__lub__kolejka.html#ad514d78e27f4eed981eff2321e6b503e',1,'Stos_lub_kolejka']]],
+  ['pytanie_5ftak_5fnie',['pytanie_tak_nie',['../class_komunikacja.html#a22554e7095eccc02f899a5022382fe0e',1,'Komunikacja']]]
 ];

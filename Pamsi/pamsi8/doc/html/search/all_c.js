@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['sasiedzi_5fnie_5fodwiedzeni',['sasiedzi_nie_odwiedzeni',['../class_element.html#a04d9f1bebfc82dad1ca3e32e1f84fd5d',1,'Element']]],
-  ['sasiedzi_5fodwiedzeni',['sasiedzi_odwiedzeni',['../class_element.html#aea8ebe54afa2525740e1b065f9fd3a13',1,'Element']]],
-  ['sasiedztwo',['sasiedztwo',['../class_graf.html#aa79b7d3bec96534f43fe363d75235b44',1,'Graf']]]
+  ['oblicz_5fsredni_5fczas_5fwykonywania_5falgorytmu',['oblicz_sredni_czas_wykonywania_algorytmu',['../classbenchmark.html#a47af0a6ddc3d1e5afe3324f166ae1292',1,'benchmark']]],
+  ['odwiedzony',['odwiedzony',['../class_element.html#af45d4a7953e01a1d9916eed0ab17f6bb',1,'Element']]],
+  ['operator_3d',['operator=',['../class_tablica.html#a2d776cbdc02ed70b045b2c680bfdb695',1,'Tablica']]],
+  ['operator_3d_3d',['operator==',['../class_tablica.html#a3864d3f5d0a339a496136e3546e71759',1,'Tablica']]]
 ];

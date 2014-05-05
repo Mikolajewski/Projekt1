@@ -21,28 +21,22 @@ Inheritance diagram for Program\+:\begin{figure}[H]
 \item 
 bool \hyperlink{class_program_aaef7fcaf64830eb231cbb9e887d705af}{zapisz\+\_\+dane} (char $\ast$nazwa)
 \begin{DoxyCompactList}\small\item\em Metoda zapisz\+\_\+dane. \end{DoxyCompactList}\item 
-\hypertarget{class_program_a320c378a3507881d2d62bbd0c8ea07d9}{bool {\bfseries zapisz\+\_\+dane\+\_\+posortowane} (char $\ast$nazwa)}\label{class_program_a320c378a3507881d2d62bbd0c8ea07d9}
-
-\item 
 void \hyperlink{class_program_a060ea3afebf696152d50135d20856e5a}{wypisz\+\_\+dane} ()
 \begin{DoxyCompactList}\small\item\em Metoda wypisz\+\_\+dane. \end{DoxyCompactList}\item 
 bool \hyperlink{class_program_ab5441e0e8ecd02ffeada4d77aaad2726}{porownaj\+\_\+dane} (char $\ast$nazwa)
 \begin{DoxyCompactList}\small\item\em Metoda porownaj\+\_\+dane. \end{DoxyCompactList}\item 
 virtual bool \hyperlink{class_program_ac396401ba5cade863d0e6acb727bec4e}{wykonaj\+\_\+program} ()
 \begin{DoxyCompactList}\small\item\em Metoda wykonaj\+\_\+program. \end{DoxyCompactList}\item 
-\hypertarget{class_program_a7fa8a33fb88f842b544e6d65c23022c3}{virtual bool {\bfseries stworz\+\_\+plik\+\_\+testowy} (int ilosc, char $\ast$nazwa)}\label{class_program_a7fa8a33fb88f842b544e6d65c23022c3}
-
-\item 
+virtual bool \hyperlink{class_program_a7fa8a33fb88f842b544e6d65c23022c3}{stworz\+\_\+plik\+\_\+testowy} (int ilosc, char $\ast$nazwa)
+\begin{DoxyCompactList}\small\item\em Metoda stworz\+\_\+plik\+\_\+testowy. \end{DoxyCompactList}\item 
 clock\+\_\+t \hyperlink{class_program_ab68c69977637eb8cc05a57e176a21986}{zacznij\+\_\+pomiar\+\_\+czasu} ()
 \begin{DoxyCompactList}\small\item\em Metoda zacznij\+\_\+pomiar\+\_\+czasu. \end{DoxyCompactList}\item 
 clock\+\_\+t \hyperlink{class_program_a3515568f8df7224bfd8fd8b7b76ab0ba}{zakoncz\+\_\+pomiar\+\_\+czasu} ()
 \begin{DoxyCompactList}\small\item\em Metoda zakoncz\+\_\+pomiar\+\_\+czasu. \end{DoxyCompactList}\item 
-\hypertarget{class_program_aac837dd96e761e55fd3faa2b197635fc}{clock\+\_\+t {\bfseries wstrzymaj\+\_\+pomiar\+\_\+czasu} ()}\label{class_program_aac837dd96e761e55fd3faa2b197635fc}
-
-\item 
-\hypertarget{class_program_a7c069b25265a74e466ac9b868fcf0a9d}{clock\+\_\+t {\bfseries wznow\+\_\+pomiar\+\_\+czasu} ()}\label{class_program_a7c069b25265a74e466ac9b868fcf0a9d}
-
-\end{DoxyCompactItemize}
+clock\+\_\+t \hyperlink{class_program_aac837dd96e761e55fd3faa2b197635fc}{wstrzymaj\+\_\+pomiar\+\_\+czasu} ()
+\begin{DoxyCompactList}\small\item\em Metoda wstrzymaj\+\_\+pomiar\+\_\+czasu. \end{DoxyCompactList}\item 
+clock\+\_\+t \hyperlink{class_program_a7c069b25265a74e466ac9b868fcf0a9d}{wznow\+\_\+pomiar\+\_\+czasu} ()
+\begin{DoxyCompactList}\small\item\em Metoda wznow\+\_\+pomiar\+\_\+czasu. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -51,9 +45,8 @@ clock\+\_\+t \hyperlink{class_program_a3515568f8df7224bfd8fd8b7b76ab0ba}{zakoncz
 \item 
 clock\+\_\+t \hyperlink{class_program_a8cdcc795adc329732f41b399044d0a5b}{czas\+\_\+rozpoczecia}
 \begin{DoxyCompactList}\small\item\em Zmienna czas\+\_\+rozpoczecia. \end{DoxyCompactList}\item 
-\hypertarget{class_program_aded0e8c471b06c63a58d47994ddac83f}{clock\+\_\+t {\bfseries czas\+\_\+wstrzymania}}\label{class_program_aded0e8c471b06c63a58d47994ddac83f}
-
-\item 
+clock\+\_\+t \hyperlink{class_program_aded0e8c471b06c63a58d47994ddac83f}{czas\+\_\+wstrzymania}
+\begin{DoxyCompactList}\small\item\em Zmienna czas\+\_\+wstrzymania. \end{DoxyCompactList}\item 
 fstream \hyperlink{class_program_a532ceacb1d70da66142bab96a3eb0753}{plik\+\_\+wejsciowy}
 \begin{DoxyCompactList}\small\item\em Zmienna plik\+\_\+wejsciowy. \end{DoxyCompactList}\item 
 fstream \hyperlink{class_program_aaa305591a4333d799c8d353f3072d8e0}{plik\+\_\+wyjsciowy}
@@ -85,7 +78,34 @@ Metoda porownujaca otrzymane dane ze spodziewanym wynikiem.
 \begin{DoxyReturn}{Returns}
 Metoda zwraca wartosc true jesli udalo sie otworzyc odpowiedni plik i dane sa zgodne z wynikajacymi z obliczen. W przeciwynym wypadku metoda zwraca wartosc false i wyswietla odpowiedni komunikat. 
 \end{DoxyReturn}
-\hypertarget{class_program_ac396401ba5cade863d0e6acb727bec4e}{\index{Program@{Program}!wykonaj\+\_\+program@{wykonaj\+\_\+program}}
+\hypertarget{class_program_a7fa8a33fb88f842b544e6d65c23022c3}{\index{Program@{Program}!stworz\+\_\+plik\+\_\+testowy@{stworz\+\_\+plik\+\_\+testowy}}
+\index{stworz\+\_\+plik\+\_\+testowy@{stworz\+\_\+plik\+\_\+testowy}!Program@{Program}}
+\subsubsection[{stworz\+\_\+plik\+\_\+testowy}]{\setlength{\rightskip}{0pt plus 5cm}bool Program\+::stworz\+\_\+plik\+\_\+testowy (
+\begin{DoxyParamCaption}
+\item[{int}]{ilosc, }
+\item[{char $\ast$}]{nazwa}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_program_a7fa8a33fb88f842b544e6d65c23022c3}
+
+
+Metoda stworz\+\_\+plik\+\_\+testowy. 
+
+Metoda przeciazana przez wlasciwy program w celu utworzenia pliku wejsciowego dla wlasciwego algorytmu. Gdy metoda nie jest przeciazona zwraca odpowiedni komunikat i wartosc false. 
+
+Reimplemented in \hyperlink{class_przykladowy__program_a01cb33d6717d2dfd159f4607b7c8269f}{Przykladowy\+\_\+program}.
+
+\hypertarget{class_program_aac837dd96e761e55fd3faa2b197635fc}{\index{Program@{Program}!wstrzymaj\+\_\+pomiar\+\_\+czasu@{wstrzymaj\+\_\+pomiar\+\_\+czasu}}
+\index{wstrzymaj\+\_\+pomiar\+\_\+czasu@{wstrzymaj\+\_\+pomiar\+\_\+czasu}!Program@{Program}}
+\subsubsection[{wstrzymaj\+\_\+pomiar\+\_\+czasu}]{\setlength{\rightskip}{0pt plus 5cm}clock\+\_\+t Program\+::wstrzymaj\+\_\+pomiar\+\_\+czasu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_program_aac837dd96e761e55fd3faa2b197635fc}
+
+
+Metoda wstrzymaj\+\_\+pomiar\+\_\+czasu. 
+
+Metoda zatrzymujaca pomiar czasu. Wykorzystywana w pomiarach do pominiecia fragmentu programu. \hypertarget{class_program_ac396401ba5cade863d0e6acb727bec4e}{\index{Program@{Program}!wykonaj\+\_\+program@{wykonaj\+\_\+program}}
 \index{wykonaj\+\_\+program@{wykonaj\+\_\+program}!Program@{Program}}
 \subsubsection[{wykonaj\+\_\+program}]{\setlength{\rightskip}{0pt plus 5cm}bool Program\+::wykonaj\+\_\+program (
 \begin{DoxyParamCaption}
@@ -110,7 +130,18 @@ Metoda zwraca wartosc false jesli nie zostala nadpisana inna metoda z klasy dzie
 
 Metoda wypisz\+\_\+dane. 
 
-Metoda, ktora wypisuje przetworzone dane na standardowym wyjsciu. \hypertarget{class_program_ab68c69977637eb8cc05a57e176a21986}{\index{Program@{Program}!zacznij\+\_\+pomiar\+\_\+czasu@{zacznij\+\_\+pomiar\+\_\+czasu}}
+Metoda, ktora wypisuje przetworzone dane na standardowym wyjsciu. \hypertarget{class_program_a7c069b25265a74e466ac9b868fcf0a9d}{\index{Program@{Program}!wznow\+\_\+pomiar\+\_\+czasu@{wznow\+\_\+pomiar\+\_\+czasu}}
+\index{wznow\+\_\+pomiar\+\_\+czasu@{wznow\+\_\+pomiar\+\_\+czasu}!Program@{Program}}
+\subsubsection[{wznow\+\_\+pomiar\+\_\+czasu}]{\setlength{\rightskip}{0pt plus 5cm}clock\+\_\+t Program\+::wznow\+\_\+pomiar\+\_\+czasu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_program_a7c069b25265a74e466ac9b868fcf0a9d}
+
+
+Metoda wznow\+\_\+pomiar\+\_\+czasu. 
+
+Metoda wznawiajaca pomiar czasu. Wykorzystywana w pomiarach do pominiecia fragmentu programu. \hypertarget{class_program_ab68c69977637eb8cc05a57e176a21986}{\index{Program@{Program}!zacznij\+\_\+pomiar\+\_\+czasu@{zacznij\+\_\+pomiar\+\_\+czasu}}
 \index{zacznij\+\_\+pomiar\+\_\+czasu@{zacznij\+\_\+pomiar\+\_\+czasu}!Program@{Program}}
 \subsubsection[{zacznij\+\_\+pomiar\+\_\+czasu}]{\setlength{\rightskip}{0pt plus 5cm}clock\+\_\+t Program\+::zacznij\+\_\+pomiar\+\_\+czasu (
 \begin{DoxyParamCaption}
@@ -167,7 +198,14 @@ Zwraca
 
 Zmienna czas\+\_\+rozpoczecia. 
 
-Zawiera czas w ktorym zaczal wykonywac sie wlasciwy kod algorytmu (liczony od momentu uruchomienia programu). Do tej danej porownywany jest czas zakoczenia wykonywania algorytmu. \hypertarget{class_program_a532ceacb1d70da66142bab96a3eb0753}{\index{Program@{Program}!plik\+\_\+wejsciowy@{plik\+\_\+wejsciowy}}
+Zawiera czas w ktorym zaczal wykonywac sie wlasciwy kod algorytmu (liczony od momentu uruchomienia programu). Do tej danej porownywany jest czas zakoczenia wykonywania algorytmu. \hypertarget{class_program_aded0e8c471b06c63a58d47994ddac83f}{\index{Program@{Program}!czas\+\_\+wstrzymania@{czas\+\_\+wstrzymania}}
+\index{czas\+\_\+wstrzymania@{czas\+\_\+wstrzymania}!Program@{Program}}
+\subsubsection[{czas\+\_\+wstrzymania}]{\setlength{\rightskip}{0pt plus 5cm}clock\+\_\+t Program\+::czas\+\_\+wstrzymania}}\label{class_program_aded0e8c471b06c63a58d47994ddac83f}
+
+
+Zmienna czas\+\_\+wstrzymania. 
+
+Zmienna zawierajaca czas w ktorym przerwano jego odliczanie. Zmienna przydaje sie, gdy podczas wykonywania algorytmu pomijany jest fragment programu \hypertarget{class_program_a532ceacb1d70da66142bab96a3eb0753}{\index{Program@{Program}!plik\+\_\+wejsciowy@{plik\+\_\+wejsciowy}}
 \index{plik\+\_\+wejsciowy@{plik\+\_\+wejsciowy}!Program@{Program}}
 \subsubsection[{plik\+\_\+wejsciowy}]{\setlength{\rightskip}{0pt plus 5cm}fstream Program\+::plik\+\_\+wejsciowy}}\label{class_program_a532ceacb1d70da66142bab96a3eb0753}
 

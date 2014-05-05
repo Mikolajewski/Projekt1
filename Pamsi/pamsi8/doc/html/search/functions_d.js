@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['usun_5felement',['usun_element',['../class_tablica__hash.html#a7f05fe199025e1b1227f0e6002ae4277',1,'Tablica_hash']]],
-  ['usun_5fklucz',['usun_klucz',['../class_tablica__hash.html#a3bb7f336108b94763baaa39177ace487',1,'Tablica_hash']]],
-  ['usun_5fkrawedz',['usun_krawedz',['../class_graf.html#adbfdf992968717175944d844e929d3b8',1,'Graf']]],
-  ['usun_5fwierzcholek',['usun_wierzcholek',['../class_graf.html#afe4ec99c6fcbe71b27025573427773c6',1,'Graf']]]
+  ['sasiedzi_5fnie_5fodwiedzeni',['sasiedzi_nie_odwiedzeni',['../class_element.html#a04d9f1bebfc82dad1ca3e32e1f84fd5d',1,'Element']]],
+  ['sasiedzi_5fodwiedzeni',['sasiedzi_odwiedzeni',['../class_element.html#aea8ebe54afa2525740e1b065f9fd3a13',1,'Element']]],
+  ['sasiedztwo',['sasiedztwo',['../class_graf.html#aa79b7d3bec96534f43fe363d75235b44',1,'Graf']]],
+  ['size',['size',['../class_stos__lub__kolejka.html#a11ef2a4fc9973ec37aa5a28a2ea824ba',1,'Stos_lub_kolejka']]],
+  ['stos_5flub_5fkolejka',['Stos_lub_kolejka',['../class_stos__lub__kolejka.html#aeb0f6510fab4df741b7b2316929f3704',1,'Stos_lub_kolejka']]],
+  ['stworz_5fplik_5ftestowy',['stworz_plik_testowy',['../class_program.html#a7fa8a33fb88f842b544e6d65c23022c3',1,'Program::stworz_plik_testowy()'],['../class_przykladowy__program.html#a01cb33d6717d2dfd159f4607b7c8269f',1,'Przykladowy_program::stworz_plik_testowy()']]]
 ];

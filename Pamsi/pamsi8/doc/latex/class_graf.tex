@@ -31,12 +31,20 @@ void \hyperlink{class_graf_ab34f72112bc953a148e51eb479222797}{anty\+\_\+depth\+\
 \begin{DoxyCompactList}\small\item\em anty\+\_\+depth\+\_\+first\+\_\+search \end{DoxyCompactList}\item 
 void \hyperlink{class_graf_aee3970f1a56eb53223f30d0ae48ef612}{breadth\+\_\+first\+\_\+search} (wierzcholek poczatek)
 \begin{DoxyCompactList}\small\item\em breadth\+\_\+first\+\_\+search \end{DoxyCompactList}\item 
+bool \hyperlink{class_graf_a5f22ab605f2d4dffb0ab8240237ea978}{best\+\_\+first\+\_\+search} (wierzcholek poczatek, wierzcholek cel)
+\begin{DoxyCompactList}\small\item\em Metoda best\+\_\+first\+\_\+search. \end{DoxyCompactList}\item 
 \hyperlink{class_graf_abc168cfda60ca1af9ea6b519b368cdcb}{Graf} ()
 \begin{DoxyCompactList}\small\item\em Konstruktor grafu. \end{DoxyCompactList}\item 
 int \hyperlink{class_graf_a06d0a3918059f517745474009d914300}{zwroc\+\_\+odwiedzonych} ()
 \begin{DoxyCompactList}\small\item\em zwroc\+\_\+odwiedzonych \end{DoxyCompactList}\item 
 void \hyperlink{class_graf_a4b4c691cb70c87ddd066840e397b7212}{wypisz} ()
 \begin{DoxyCompactList}\small\item\em wypisz \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_a9fd6c0adb4a4a68db7ee40e405ec3e79}{wypisz\+\_\+droge} ()
+\begin{DoxyCompactList}\small\item\em Metoda wypisz\+\_\+droge. \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_a55630a8b15160e3ab3ceaa67638f051b}{zapisz\+\_\+droge} ()
+\begin{DoxyCompactList}\small\item\em Metoda zapisz\+\_\+droge. \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_a44233c13244681f1c75a7f20f1241feb}{wypisz\+\_\+parametry\+\_\+drogi} ()
+\begin{DoxyCompactList}\small\item\em Metoda wypisz\+\_\+parametry\+\_\+drogi. \end{DoxyCompactList}\item 
 int \hyperlink{class_graf_ade1cb15f2ea58de66f3d93d1677d8103}{ilosc\+\_\+krawedzi} ()
 \begin{DoxyCompactList}\small\item\em ilosc\+\_\+krawedzi \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -74,7 +82,19 @@ Przeciazenie konstruktora wpisujace do pola odwiedzone wartosc 0.
 
 anty\+\_\+depth\+\_\+first\+\_\+search 
 
-Metoda usuwajaca znaczniki powstale po wywolaniu funkcji depth\+\_\+first\+\_\+search. Zeruje ona rowniez pole odwiedzone w celu powtornego wykorzystania. \hypertarget{class_graf_aee3970f1a56eb53223f30d0ae48ef612}{\index{Graf@{Graf}!breadth\+\_\+first\+\_\+search@{breadth\+\_\+first\+\_\+search}}
+Metoda usuwajaca znaczniki powstale po wywolaniu funkcji depth\+\_\+first\+\_\+search. Zeruje ona rowniez pole odwiedzone w celu powtornego wykorzystania. \hypertarget{class_graf_a5f22ab605f2d4dffb0ab8240237ea978}{\index{Graf@{Graf}!best\+\_\+first\+\_\+search@{best\+\_\+first\+\_\+search}}
+\index{best\+\_\+first\+\_\+search@{best\+\_\+first\+\_\+search}!Graf@{Graf}}
+\subsubsection[{best\+\_\+first\+\_\+search}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ bool {\bf Graf}$<$ krawedz, wierzcholek $>$\+::best\+\_\+first\+\_\+search (
+\begin{DoxyParamCaption}
+\item[{wierzcholek}]{poczatek, }
+\item[{wierzcholek}]{cel}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a5f22ab605f2d4dffb0ab8240237ea978}
+
+
+Metoda best\+\_\+first\+\_\+search. 
+
+Metoda wykonujaca szukanie drogi pomiedzy dwoma wierzcholkami \hypertarget{class_graf_aee3970f1a56eb53223f30d0ae48ef612}{\index{Graf@{Graf}!breadth\+\_\+first\+\_\+search@{breadth\+\_\+first\+\_\+search}}
 \index{breadth\+\_\+first\+\_\+search@{breadth\+\_\+first\+\_\+search}!Graf@{Graf}}
 \subsubsection[{breadth\+\_\+first\+\_\+search}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ void {\bf Graf}$<$ krawedz, wierzcholek $>$\+::breadth\+\_\+first\+\_\+search (
 \begin{DoxyParamCaption}
@@ -188,7 +208,40 @@ Metoda usuwajaca wyszystkie krawedzie \char`\"{}wychodzace\char`\"{} i \char`\"{
 
 wypisz 
 
-Metoda wypisujaca strukture \hypertarget{class_graf_a06d0a3918059f517745474009d914300}{\index{Graf@{Graf}!zwroc\+\_\+odwiedzonych@{zwroc\+\_\+odwiedzonych}}
+Metoda wypisujaca strukture \hypertarget{class_graf_a9fd6c0adb4a4a68db7ee40e405ec3e79}{\index{Graf@{Graf}!wypisz\+\_\+droge@{wypisz\+\_\+droge}}
+\index{wypisz\+\_\+droge@{wypisz\+\_\+droge}!Graf@{Graf}}
+\subsubsection[{wypisz\+\_\+droge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ void {\bf Graf}$<$ krawedz, wierzcholek $>$\+::wypisz\+\_\+droge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a9fd6c0adb4a4a68db7ee40e405ec3e79}
+
+
+Metoda wypisz\+\_\+droge. 
+
+Metoda wypisujaca droge pomiedzy dwoma punktami. Droga zostala wczesniej znaleziono podczas wykonywania innego algorytmu. \hypertarget{class_graf_a44233c13244681f1c75a7f20f1241feb}{\index{Graf@{Graf}!wypisz\+\_\+parametry\+\_\+drogi@{wypisz\+\_\+parametry\+\_\+drogi}}
+\index{wypisz\+\_\+parametry\+\_\+drogi@{wypisz\+\_\+parametry\+\_\+drogi}!Graf@{Graf}}
+\subsubsection[{wypisz\+\_\+parametry\+\_\+drogi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ void {\bf Graf}$<$ krawedz, wierzcholek $>$\+::wypisz\+\_\+parametry\+\_\+drogi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a44233c13244681f1c75a7f20f1241feb}
+
+
+Metoda wypisz\+\_\+parametry\+\_\+drogi. 
+
+Metoda wypisujaca laczny koszt drogi jak rowniez ilosc potrzebnych krokow. \hypertarget{class_graf_a55630a8b15160e3ab3ceaa67638f051b}{\index{Graf@{Graf}!zapisz\+\_\+droge@{zapisz\+\_\+droge}}
+\index{zapisz\+\_\+droge@{zapisz\+\_\+droge}!Graf@{Graf}}
+\subsubsection[{zapisz\+\_\+droge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ void {\bf Graf}$<$ krawedz, wierzcholek $>$\+::zapisz\+\_\+droge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a55630a8b15160e3ab3ceaa67638f051b}
+
+
+Metoda zapisz\+\_\+droge. 
+
+Metoda zapisuja droge pomiedzy dwoma wierzcholkami. Metoda wykorzystywana w algorytmie best\+\_\+first\+\_\+search \hypertarget{class_graf_a06d0a3918059f517745474009d914300}{\index{Graf@{Graf}!zwroc\+\_\+odwiedzonych@{zwroc\+\_\+odwiedzonych}}
 \index{zwroc\+\_\+odwiedzonych@{zwroc\+\_\+odwiedzonych}!Graf@{Graf}}
 \subsubsection[{zwroc\+\_\+odwiedzonych}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class krawedz , class wierzcholek $>$ int {\bf Graf}$<$ krawedz, wierzcholek $>$\+::zwroc\+\_\+odwiedzonych (
 \begin{DoxyParamCaption}

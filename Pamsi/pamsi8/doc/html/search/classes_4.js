@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['program',['Program',['../class_program.html',1,'']]],
-  ['przykladowy_5fprogram',['Przykladowy_program',['../class_przykladowy__program.html',1,'']]]
+  ['lista',['Lista',['../class_lista.html',1,'']]],
+  ['lista_3c_20nieposortowana_2c_20krawedz_2c_20int_20_3e',['Lista&lt; nieposortowana, krawedz, int &gt;',['../class_lista.html',1,'']]]
 ];

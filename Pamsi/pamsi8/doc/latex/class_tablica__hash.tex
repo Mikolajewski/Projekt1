@@ -15,8 +15,10 @@ Klasa \hyperlink{class_tablica__hash}{Tablica\+\_\+hash}.
 \item 
 bool \hyperlink{class_tablica__hash_a2f4ff5542110d6b6aa1cebcab857e888}{dodaj} (klucz haslo, klucz haslo2, dana wartosc)
 \begin{DoxyCompactList}\small\item\em Metoda dodaj. \end{DoxyCompactList}\item 
-bool \hyperlink{class_tablica__hash_a7fbead805fa4e457a7fab843251ef97d}{pobierz} (klucz haslo)
-\begin{DoxyCompactList}\small\item\em Metoda pobierz. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tablica__hash_ad0f14e672fb51ccb1a7f4398b756fa3a}{znajdz1} (klucz haslo)
+\begin{DoxyCompactList}\small\item\em Metoda znajdz1. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tablica__hash_a45cb10776d07c4269518cd065e514c3b}{znajdz2} (klucz haslo, klucz haslo2)
+\begin{DoxyCompactList}\small\item\em Metoda znajdz2. \end{DoxyCompactList}\item 
 typ $\ast$ \hyperlink{class_tablica__hash_a6b751df11a6e2674c44e09a14551d1f5}{zwroc\+\_\+element} (klucz haslo)
 \begin{DoxyCompactList}\small\item\em Metoda pobierz. \end{DoxyCompactList}\item 
 \hypertarget{class_tablica__hash_a71cfb5cb24ff2639b880da0b6126f256}{\hyperlink{class_tablica__hash_a71cfb5cb24ff2639b880da0b6126f256}{Tablica\+\_\+hash} ()}\label{class_tablica__hash_a71cfb5cb24ff2639b880da0b6126f256}
@@ -66,21 +68,7 @@ Metoda dodajaca element na odpowiednie miejsce w tabeli/liscie. Jesli element je
 
 nastepny 
 
-Metoda zwracajaca wskaznik do nastepnego w tablicy z hashowanie elementu o tym samym kluczu. \hypertarget{class_tablica__hash_a7fbead805fa4e457a7fab843251ef97d}{\index{Tablica\+\_\+hash@{Tablica\+\_\+hash}!pobierz@{pobierz}}
-\index{pobierz@{pobierz}!Tablica\+\_\+hash@{Tablica\+\_\+hash}}
-\subsubsection[{pobierz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class typ , class klucz, class dana $>$ bool {\bf Tablica\+\_\+hash}$<$ typ, klucz, dana $>$\+::pobierz (
-\begin{DoxyParamCaption}
-\item[{klucz}]{haslo}
-\end{DoxyParamCaption}
-)}}\label{class_tablica__hash_a7fbead805fa4e457a7fab843251ef97d}
-
-
-Metoda pobierz. 
-
-Metoda znajdujaca zadany element. \begin{DoxyReturn}{Returns}
-Zwraca true jesli znaleziono element i false jesli nie uda³o sie znalezc elementu. 
-\end{DoxyReturn}
-\hypertarget{class_tablica__hash_a7f05fe199025e1b1227f0e6002ae4277}{\index{Tablica\+\_\+hash@{Tablica\+\_\+hash}!usun\+\_\+element@{usun\+\_\+element}}
+Metoda zwracajaca wskaznik do nastepnego w tablicy z hashowanie elementu o tym samym kluczu. \hypertarget{class_tablica__hash_a7f05fe199025e1b1227f0e6002ae4277}{\index{Tablica\+\_\+hash@{Tablica\+\_\+hash}!usun\+\_\+element@{usun\+\_\+element}}
 \index{usun\+\_\+element@{usun\+\_\+element}!Tablica\+\_\+hash@{Tablica\+\_\+hash}}
 \subsubsection[{usun\+\_\+element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class typ , class klucz, class dana $>$ bool {\bf Tablica\+\_\+hash}$<$ typ, klucz, dana $>$\+::usun\+\_\+element (
 \begin{DoxyParamCaption}
@@ -127,6 +115,35 @@ Metoda zlicz.
 
 \begin{DoxyReturn}{Returns}
 Metoda zwraca ilosc elementow wpisanych do struktury. 
+\end{DoxyReturn}
+\hypertarget{class_tablica__hash_ad0f14e672fb51ccb1a7f4398b756fa3a}{\index{Tablica\+\_\+hash@{Tablica\+\_\+hash}!znajdz1@{znajdz1}}
+\index{znajdz1@{znajdz1}!Tablica\+\_\+hash@{Tablica\+\_\+hash}}
+\subsubsection[{znajdz1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class typ , class klucz, class dana $>$ bool {\bf Tablica\+\_\+hash}$<$ typ, klucz, dana $>$\+::znajdz1 (
+\begin{DoxyParamCaption}
+\item[{klucz}]{haslo}
+\end{DoxyParamCaption}
+)}}\label{class_tablica__hash_ad0f14e672fb51ccb1a7f4398b756fa3a}
+
+
+Metoda znajdz1. 
+
+Metoda znajdujaca zadany element. \begin{DoxyReturn}{Returns}
+Zwraca true jesli znaleziono element i false jesli nie uda³o sie znalezc elementu. 
+\end{DoxyReturn}
+\hypertarget{class_tablica__hash_a45cb10776d07c4269518cd065e514c3b}{\index{Tablica\+\_\+hash@{Tablica\+\_\+hash}!znajdz2@{znajdz2}}
+\index{znajdz2@{znajdz2}!Tablica\+\_\+hash@{Tablica\+\_\+hash}}
+\subsubsection[{znajdz2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class typ , class klucz, class dana $>$ bool {\bf Tablica\+\_\+hash}$<$ typ, klucz, dana $>$\+::znajdz2 (
+\begin{DoxyParamCaption}
+\item[{klucz}]{haslo, }
+\item[{klucz}]{haslo2}
+\end{DoxyParamCaption}
+)}}\label{class_tablica__hash_a45cb10776d07c4269518cd065e514c3b}
+
+
+Metoda znajdz2. 
+
+Metoda znajdujaca zadany element. \begin{DoxyReturn}{Returns}
+Zwraca true jesli znaleziono element i false jesli nie uda³o sie znalezc elementu. 
 \end{DoxyReturn}
 \hypertarget{class_tablica__hash_a6b751df11a6e2674c44e09a14551d1f5}{\index{Tablica\+\_\+hash@{Tablica\+\_\+hash}!zwroc\+\_\+element@{zwroc\+\_\+element}}
 \index{zwroc\+\_\+element@{zwroc\+\_\+element}!Tablica\+\_\+hash@{Tablica\+\_\+hash}}

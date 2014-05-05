@@ -1,8 +1,17 @@
 var searchData=
 [
-  ['tab_5fhash_2ehh',['tab_hash.hh',['../tab__hash_8hh.html',1,'']]],
-  ['tablica',['Tablica',['../class_tablica.html',1,'Tablica'],['../class_tablica.html#a5f484e7b0478e1ff9b62e894f9d7b28d',1,'Tablica::Tablica()'],['../class_tablica.html#aee4b66a81059b6ef1881909cd9f344b4',1,'Tablica::Tablica(int ilosc)']]],
-  ['tablica_2ehh',['tablica.hh',['../tablica_8hh.html',1,'']]],
-  ['tablica_5fhash',['Tablica_hash',['../class_tablica__hash.html',1,'Tablica_hash&lt; typ, klucz, dana &gt;'],['../class_tablica__hash.html#a71cfb5cb24ff2639b880da0b6126f256',1,'Tablica_hash::Tablica_hash()']]],
-  ['tablica_5fhash_3c_20krawedz_2c_20wierzcholek_2c_20int_20_3e',['Tablica_hash&lt; krawedz, wierzcholek, int &gt;',['../class_tablica__hash.html',1,'']]]
+  ['plik_5fwejsciowy',['plik_wejsciowy',['../class_program.html#a532ceacb1d70da66142bab96a3eb0753',1,'Program']]],
+  ['plik_5fwyjsciowy',['plik_wyjsciowy',['../class_program.html#aaa305591a4333d799c8d353f3072d8e0',1,'Program']]],
+  ['pobierz_5fint',['pobierz_int',['../class_komunikacja.html#a28d01913291afd05c5069182fd29506b',1,'Komunikacja']]],
+  ['pop',['pop',['../class_stos__lub__kolejka.html#a3d511f510942d9f0ac52a1fedee9100b',1,'Stos_lub_kolejka']]],
+  ['porownaj_5fdane',['porownaj_dane',['../class_program.html#ab5441e0e8ecd02ffeada4d77aaad2726',1,'Program']]],
+  ['program',['Program',['../class_program.html',1,'']]],
+  ['program_2ecpp',['program.cpp',['../program_8cpp.html',1,'']]],
+  ['program_2ehh',['program.hh',['../program_8hh.html',1,'']]],
+  ['przepisz_5fdane',['przepisz_dane',['../class_element.html#aacd6653f0fa6475a8b2e122dddf80627',1,'Element']]],
+  ['przykladowy_5fprogram',['Przykladowy_program',['../class_przykladowy__program.html',1,'']]],
+  ['przykladowy_5fprogram_2ecpp',['przykladowy_program.cpp',['../przykladowy__program_8cpp.html',1,'']]],
+  ['przykladowy_5fprogram_2ehh',['przykladowy_program.hh',['../przykladowy__program_8hh.html',1,'']]],
+  ['push',['push',['../class_stos__lub__kolejka.html#ad514d78e27f4eed981eff2321e6b503e',1,'Stos_lub_kolejka']]],
+  ['pytanie_5ftak_5fnie',['pytanie_tak_nie',['../class_komunikacja.html#a22554e7095eccc02f899a5022382fe0e',1,'Komunikacja']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ilosc_5fkrawedzi',['ilosc_krawedzi',['../class_graf.html#ade1cb15f2ea58de66f3d93d1677d8103',1,'Graf']]]
+  ['graf',['Graf',['../class_graf.html',1,'Graf&lt; krawedz, wierzcholek &gt;'],['../class_graf.html#abc168cfda60ca1af9ea6b519b368cdcb',1,'Graf::Graf()']]],
+  ['graf_2ehh',['graf.hh',['../graf_8hh.html',1,'']]]
 ];
