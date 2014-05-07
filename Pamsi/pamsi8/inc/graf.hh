@@ -69,11 +69,14 @@ Lista zawierajaca wierzcholki. Wykorzystywana jest do wykonywania best first sea
 		Stos_lub_kolejka<krawedz*,LIFO> lista_lifo;
 		
 /*!
-\brief Konstruktor Lista
+\brief Lista 
 
+Lista w ktorej zapisana jest droga.
 */
 		Lista<nieposortowana,krawedz,int> droga;
 
+
+		Lista<posortowana,krawedz,int> lista_priorytetowa;
 	public:
 
 /*!
@@ -145,7 +148,7 @@ Metoda wykonujaca przeszukanie wszerz. Wpisuje ona rowniez odleglosc od poczatko
 Metoda wykonujaca szukanie drogi pomiedzy dwoma wierzcholkami
 */
 		bool best_first_search(wierzcholek poczatek, wierzcholek cel);
-		
+		bool best_first_search2(wierzcholek poczatek, wierzcholek cel);		
 /*!
 \brief Konstruktor grafu
 
@@ -180,7 +183,7 @@ Metoda wypisujaca droge pomiedzy dwoma punktami. Droga zostala wczesniej znalezi
 Metoda zapisuja droge pomiedzy dwoma wierzcholkami. Metoda wykorzystywana w algorytmie best_first_search
 */		
 		void zapisz_droge();
-		
+		void zapisz_droge(krawedz* koniec);		
 /*!
 \brief Metoda wypisz_parametry_drogi
 
@@ -475,6 +478,17 @@ void Graf<krawedz,wierzcholek>::zapisz_droge(){
 }
 
 template<class krawedz,class wierzcholek>
+void Graf<krawedz,wierzcholek>::zapisz_droge(krawedz* koniec){
+	krawedz* pomocnicza=koniec;
+	int i;
+	
+	for(i=1;pomocnicza!=NULL;i++){
+		droga.dodaj(pomocnicza,pomocnicza->zwroc_wage());
+		pomocnicza=pomocnicza->zwroc_poprzedni();
+	}
+}
+
+template<class krawedz,class wierzcholek>
 void Graf<krawedz,wierzcholek>::wypisz_droge(){
 	krawedz* pomocnicza=droga.zwroc(1);
 	int i;
@@ -498,3 +512,92 @@ void Graf<krawedz,wierzcholek>::wypisz_parametry_drogi(){
 	cout<<"Koszt drogi to: "<<waga<<endl;
 	cout<<"Zajmuje "<<i<<" krokow."<<endl;
 }
+
+template<class krawedz,class wierzcholek>
+bool Graf<krawedz,wierzcholek>::best_first_search2(wierzcholek poczatek,wierzcholek cel){
+	krawedz* pomocnicza=graf.zwroc_element(poczatek);
+	krawedz* wierzcholek_startowy=pomocnicza;
+	krawedz* ojciec;
+	wierzcholek nastepny;
+	Lista<posortowana,krawedz,int> lista;
+	int i;
+	int waga_krawedzi;
+	bool dodano_krawedz=false;
+	wierzcholek nazwa_poprzedniego_wierzcholka;
+	
+	cout<<endl<<"Zaczynam best first search"<<endl;
+	
+	if(pomocnicza!=NULL){
+		cout<<"Startuje z: ";
+		pomocnicza->wypisz();
+		cout<<"Szukam: "<<cel<<endl;
+		if(!pomocnicza->czy_odwiedzony()){
+			pomocnicza->odwiedzony();
+			odwiedzonych++;
+			
+			if(pomocnicza->zwroc_klucz()==cel){				//jesli element jest celem to zakoncz algorytm 			
+				cout<<"Znalazlem droge do elementu: "<<cel<<endl;
+				cout<<"Koszt drogi to: "<<pomocnicza->zwroc_odleglosc()<<endl;
+				zapisz_droge(pomocnicza);
+				return true;
+			}
+			while(pomocnicza!=NULL){															//dodawania elementow do listy priorytetowej
+				pomocnicza->wpisz_odleglosc(wierzcholek_startowy->zwroc_odleglosc());				//wpisanie odleglosci do nastepnej krawedzi
+				if(!graf.zwroc_element(pomocnicza->zwroc_klucz2())->czy_odwiedzony()){				//jesli punkt koncowy krawedzi nie zostal odwiedzony				
+					lista_priorytetowa.dodaj(pomocnicza,pomocnicza->zwroc_wage()+pomocnicza->zwroc_odleglosc());	//to dodaj krawedz do listy
+					dodano_krawedz=true;
+				}
+				pomocnicza=graf.nastepny(pomocnicza);												//przejdz do nastepnego sasiada
+			}
+			if(lista_priorytetowa.zwroc_dlugosc_listy()==0){
+				cout<<"Nie znaleziono drogi pomiedzy zadanymi wierzcholkami."<<endl;
+				return false;
+			}
+			lista_priorytetowa.wypisz();
+			pomocnicza=lista_priorytetowa.zwroc(1);                    					    //pobranie krawedzi po ktorej odbedzie sie ruch
+			if(pomocnicza==NULL){
+				cout<<"Nie znaleziono drogi pomiedzy zadanymi wierzcholkami."<<endl;
+				return false;
+			}
+			ojciec=pomocnicza;																	//zapisanie ojca
+			waga_krawedzi=pomocnicza->zwroc_wage();												//pobranie wagi kroku ktory zostanie wykonany
+			nastepny=lista_priorytetowa.zwroc(1)->zwroc_klucz2();								//  przejscie do
+			pomocnicza=graf.zwroc_element(nastepny);											//  nastepnego wierzcholka
+			pomocnicza->wpisz_odleglosc(ojciec->zwroc_wage()+ojciec->zwroc_odleglosc()); //aktualizowanie odleglosci od punktu startowego
+			pomocnicza->wpisz_poprzedni(ojciec);												//wpisanie ojca
+			cout<<"przechodze do: "<<lista_priorytetowa.zwroc(1)->zwroc_klucz2()<<endl;
+//			if(dodano_krawedz==true){
+				cout<<"usuwam: "<<(lista_priorytetowa.zwroc(1))->zwroc_odleglosc() + (lista_priorytetowa.zwroc(1))->zwroc_wage()<<endl;
+				lista_priorytetowa.usun((lista_priorytetowa.zwroc(1))->zwroc_odleglosc() + (lista_priorytetowa.zwroc(1))->zwroc_wage());			//usuniecie polecenia skoku (pierwszego elementu)
+//				lista_priorytetowa.wypisz();
+//			}
+			best_first_search2(nastepny,cel);
+		}
+		else{
+			cout<<"Element byl juz odwiedzony."<<endl;
+//			cout<<"usuwam: "<<(lista_priorytetowa.zwroc(1))->zwroc_odleglosc() + (lista_priorytetowa.zwroc(1))->zwroc_wage()<<endl;
+//			lista_priorytetowa.usun((lista_priorytetowa.zwroc(1))->zwroc_odleglosc() + (lista_priorytetowa.zwroc(1))->zwroc_wage());			//usuniecie polecenia skoku (pierwszego elementu)
+			pomocnicza=lista_priorytetowa.zwroc(1);                    					    //pobranie krawedzi po ktorej odbedzie sie ruch
+			if(pomocnicza==NULL){
+				cout<<"Nie znaleziono drogi pomiedzy zadanymi wierzcholkami."<<endl;
+				return false;
+			}
+			ojciec=pomocnicza;																	//zapisanie ojca
+			waga_krawedzi=pomocnicza->zwroc_wage();												//pobranie wagi kroku ktory zostanie wykonany
+			nastepny=lista_priorytetowa.zwroc(1)->zwroc_klucz2();								//  przejscie do
+			pomocnicza=graf.zwroc_element(nastepny);											//  nastepnego wierzcholka
+			pomocnicza->wpisz_odleglosc(wierzcholek_startowy->zwroc_odleglosc()+waga_krawedzi); //aktualizowanie odleglosci od punktu startowego
+			pomocnicza->wpisz_poprzedni(ojciec);												//wpisanie ojca
+			cout<<"przechodze do: "<<lista_priorytetowa.zwroc(1)->zwroc_klucz2()<<endl;
+			cout<<"usuwam: "<<(lista_priorytetowa.zwroc(1))->zwroc_odleglosc() + (lista_priorytetowa.zwroc(1))->zwroc_wage()<<endl;
+			lista_priorytetowa.usun((lista_priorytetowa.zwroc(1))->zwroc_odleglosc() + (lista_priorytetowa.zwroc(1))->zwroc_wage());			//usuniecie polecenia skoku (pierwszego elementu)
+			best_first_search2(nastepny,cel);
+		}
+	}
+	else{
+		cerr<<"Nie ma w grafie takiego elementu."<<endl;
+		return false;
+	}
+}
+
+

@@ -204,7 +204,7 @@ bool benchmark::zapisz_graf_do_pliku_latex(char *plik_latex,Tablica& dane){
 //		}		
 		plik_wyjsciowy<<"\\end{tikzpicture}"<<endl<<"}"<<"\\end{figure}"<<endl<<"\\end{document}"<<endl;
 		plik_wyjsciowy.close();
-		cout<<"Dane zostaly poprawnie zapisane do pliku"<<endl;
+		cout<<"Dane zostaly poprawnie zapisane w postaci grafu."<<endl;
 	}	
 	return true;
 };

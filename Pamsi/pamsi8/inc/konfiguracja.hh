@@ -5,7 +5,7 @@
 #define UWZGLEDNIC_WAGE_OSTATNIEJ_SCIEZKI  Nie //  Tak //  
 
 //				Opcje benchmarku
-#define ILOSC_DANYCH 20
+#define ILOSC_DANYCH 40
 #define ILE_RAZY_POWTORZYC 1
 
 //				Opcje programu

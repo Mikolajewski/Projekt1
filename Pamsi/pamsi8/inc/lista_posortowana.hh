@@ -1,6 +1,9 @@
 #ifndef LISTA
 #define LISTA
 #include "element.hh"
+#include <iostream>
+
+using namespace std;
 
 enum sortowanie{posortowana,nieposortowana};
 
@@ -33,7 +36,7 @@ Metoda dodajaca element z waga do listy.
 Metoda zwracajaca element znajdujacy sie na liscie (o ile takowy istnieje, w przeciwnym wypadku zwracane jest NULL). Wyszukiwanie odbywa sie po wadze.
 */
 		typ* znajdz(waga wartosc);
-		
+		Element<waga,typ>* znajdz_element(waga wartosc);		
 /*!
 \brief Metoda usun
 
@@ -125,25 +128,78 @@ void Lista<rodzaj_sortowania,typ,waga>::dodaj(typ* element,waga wartosc){
 
 template<sortowanie rodzaj_sortowania,class typ,class waga>
 typ* Lista<rodzaj_sortowania,typ,waga>::znajdz(waga wartosc){    
-	typ* pomocnicza=lista;
-	while(pomocnicza.zwroc_wage()==wartosc){
-		pomocnicza=pomocnicza->zwroc_wskaznik();
+	Element<waga,typ>* pomocnicza=lista;
+	if(rodzaj_sortowania==posortowana){
+		while(pomocnicza!=NULL && pomocnicza->zwroc_wage()<wartosc){
+			pomocnicza=pomocnicza->zwroc_wskaznik();
+		}
+		if(pomocnicza!=NULL && pomocnicza->zwroc_wage()==wartosc){	
+			return pomocnicza->zwroc_wartosc();
+		}
+		else{
+			return NULL;
+		}
 	}
-	if(pomocnicza.zwroc_wage==wartosc){	
-		return pomocnicza;
+	else if(rodzaj_sortowania==nieposortowana){
+		while(pomocnicza!=NULL && pomocnicza->zwroc_wage()!=wartosc){
+			
+		}
+		if(pomocnicza==NULL){
+			return NULL;
+		}
+		else{
+			return pomocnicza->zwroc_wartosc();
+		}
 	}
-	else{
-		return NULL;
+};
+
+template<sortowanie rodzaj_sortowania,class typ,class waga>
+Element<waga,typ>* Lista<rodzaj_sortowania,typ,waga>::znajdz_element(waga wartosc){    
+	Element<waga,typ>* pomocnicza=lista;
+	if(rodzaj_sortowania==posortowana){
+		while(pomocnicza!=NULL && pomocnicza->zwroc_klucz()<wartosc){
+			pomocnicza=pomocnicza->zwroc_wskaznik();
+		}
+		if(pomocnicza!=NULL && pomocnicza->zwroc_klucz()==wartosc){	
+			return pomocnicza;
+		}
+		else{
+			return NULL;
+		}
+	}
+	else if(rodzaj_sortowania==nieposortowana){
+		while(pomocnicza!=NULL && pomocnicza->zwroc_klucz()!=wartosc){
+			
+		}
+		if(pomocnicza==NULL){
+			return NULL;
+		}
+		else{
+			return pomocnicza;
+		}
 	}
 };
 
 template<sortowanie rodzaj_sortowania,class typ,class waga>
 bool Lista<rodzaj_sortowania,typ,waga>::usun(waga wartosc){
-	typ pomocnicza=znajdz(wartosc);
+	Element<waga,typ>* pomocnicza=znajdz_element(wartosc);
+	cout<<"usuwam z listy posortowanej"<<endl;
 	if(pomocnicza!=NULL){
-		pomocnicza->zwroc_wskaznik()->wpisz_ojciec(pomocnicza->zwroc_ojciec());
-		pomocnicza->zwroc_ojciec()->wpisz_wskaznik(pomocnicza->zwroc_wskaznik());
+		if(pomocnicza->zwroc_wskaznik()!=NULL){
+			pomocnicza->zwroc_wskaznik()->wpisz_ojciec(pomocnicza->zwroc_ojciec());	
+		}
+		if(pomocnicza->zwroc_ojciec()!=NULL){
+			pomocnicza->zwroc_ojciec()->wpisz_wskaznik(pomocnicza->zwroc_wskaznik());
+		}
+		else if(pomocnicza->zwroc_wskaznik()!=NULL){				//usuwanie pierwszego wyrazu z listy n>1
+			lista=pomocnicza->zwroc_wskaznik();
+			pomocnicza->zwroc_wskaznik()->wpisz_ojciec(NULL);
+		}
+		else{														//usuwanie jedynego elementu
+			lista=NULL;
+		}
 		delete pomocnicza;
+		dlugosc_listy--;
 		return true;
 	}
 	else
@@ -154,7 +210,7 @@ bool Lista<rodzaj_sortowania,typ,waga>::usun(waga wartosc){
 template<sortowanie rodzaj_sortowania,class typ,class waga>
 typ* Lista<rodzaj_sortowania,typ,waga>::zwroc(int indeks){
 	int i;
-	Element<int,typ>* pomocnicza=lista;
+	Element<waga,typ>* pomocnicza=lista;
 	if(indeks<=dlugosc_listy){
 		for(i=1;indeks!=i;i++){
 			pomocnicza=pomocnicza->zwroc_wskaznik();

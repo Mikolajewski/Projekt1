@@ -30,10 +30,10 @@ bool Przykladowy_program::wykonaj_program(Tablica& dane){
 	for(i=0;i<dane.dlugosc_tablicy;i++){
 		struktura.dodaj_krawedz(dane.klucze[i],dane.klucze2[i],dane.tablica[i]);
 	}
-	wznow_pomiar_czasu();
 //	struktura.depth_first_search(dane.klucze[0]);
 	cout<<"Graf wyglada nastepujaco."<<endl;
 	struktura.wypisz();
+	cout<<"------------------------Zaczynam------------------------"<<endl;
 //	struktura.sasiedztwo(dane.klucze[0]);
 //	struktura.czy_sasiad(dane.klucze[0],dane.klucze2[0]);
 //	struktura.usun_krawedz(dane.klucze[0],dane.klucze2[0]);
@@ -41,9 +41,8 @@ bool Przykladowy_program::wykonaj_program(Tablica& dane){
 //	struktura.usun_wierzcholek(dane.klucze[0]);
 //	struktura.sasiedztwo(dane.klucze[0]);
 //	struktura.breadth_first_search(dane.klucze[0]);
-	cout<<"------------------------Zaczynam------------------------"<<endl;
-	struktura.best_first_search(dane.klucze[0],dane.klucze[9]);
-//	struktura.wypisz();
+	wznow_pomiar_czasu();
+	struktura.best_first_search2(dane.klucze[0],dane.klucze[9]);
 	wstrzymaj_pomiar_czasu();
 	struktura.wypisz_droge();
 	struktura.wypisz_parametry_drogi();

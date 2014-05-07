@@ -74,6 +74,7 @@ Wskazuje na strukture typu element. W grafie moze byc wykorzystany jako odnosnik
 Wskazuje na strukture typu element. W grafie moze byc wykorzystany jako odnosnik do nastepnego elementu.
 */
 		Element* _wskaznik;
+		Element* _poprzedni;
 	public:
 /*!
 \brief Konstruktor Element
@@ -97,7 +98,7 @@ Metoda wpisujaca wartosc do zmiennej zawierajacej dane elementu.
 Metoda wpisujaca klucz po ktorym mozna znalezc element.
 */
 		void wpisz_klucz(klucz haslo){_haslo=haslo;};
-
+		
 /*!
 \brief Metoda wpisz_klucz
 
@@ -120,7 +121,8 @@ Metoda wpisujaca wage do elementu.
 Wpisuje wskaznik do struktury typu Element.
 */
 		void wpisz_ojciec(Element<klucz,wartosc>* wskaznik){_ojciec=wskaznik;};
-
+		void wpisz_poprzedni(Element<klucz,wartosc>* wskaznik){_poprzedni=wskaznik;};
+		Element<klucz,wartosc>* zwroc_poprzedni(){return _poprzedni;};
 /*!
 \brief Metoda wpisz_wskaznik
 
@@ -179,6 +181,8 @@ Metoda przepisujaca same dane bez zmiany wskaznikow.
 */
 		void przepisz_dane(Element<klucz,wartosc>* wskaznik);
 		
+		void wpisz_odleglosc(int odleglosc){_odleglosc=odleglosc;};
+		int zwroc_odleglosc(){return _odleglosc;};
 /*!
 \brief czy_odwiedzony
 
@@ -244,7 +248,7 @@ void Element<klucz,wartosc>::przepisz_dane(Element<klucz,wartosc>* wskaznik){
 
 template<class klucz,class wartosc>
 void Element<klucz,wartosc>::wypisz(){
-	cout<<"Klucz: "<<zwroc_klucz()<<" Klucz2: "<<zwroc_klucz2()<<" Waga: "<<zwroc_wage();
+	cout<<"Klucz: "<<zwroc_klucz()<<" Klucz2: "<<zwroc_klucz2()<<" Waga: "<<zwroc_wage()<<" Odleglosc: "<<_odleglosc;
 //	if(zwroc_poprzedni()!=NULL){
 //	cout<<" Ojciec: "<<zwroc_poprzedni()->zwroc_klucz();
 //	}
