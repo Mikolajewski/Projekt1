@@ -1,0 +1,6 @@
+Fabryka | Godziny         | Dostepny czas w fabryce
+1	|1		0 | 4
+2	|0		2 | 12
+3	|3		2 | 18
+--------------------------------
+zysk 	|3000	      5000|	

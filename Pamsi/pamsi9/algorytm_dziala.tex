@@ -1,0 +1,56 @@
+
+\documentclass[]{article}
+\usepackage{tikz}
+\usepackage{tikz,fullpage}
+\usetikzlibrary{arrows,%
+                petri,%
+                topaths}%
+\usepackage{tkz-berge}
+\usepackage[position=top]{subfig}
+\begin{document}
+\begin{figure}
+\centering
+\subfloat[]{
+\begin{tikzpicture}[scale=0.75,transform shape]
+  \Vertex[x=1,y=9]{k}
+  \Vertex[x=2,y=10]{n}
+  \Vertex[x=3,y=25]{w}
+  \Vertex[x=4,y=13]{u}
+  \Vertex[x=5,y=24]{x}
+  \Vertex[x=6,y=8]{b}
+  \Vertex[x=7,y=22]{z}
+  \Vertex[x=8,y=6]{e}
+  \Vertex[x=9,y=20]{i}
+  \Vertex[x=10,y=8]{j}
+  \Vertex[x=11,y=1]{c}
+  \Vertex[x=12,y=23]{g}
+  \Vertex[x=13,y=24]{p}
+  \Vertex[x=14,y=1]{s}
+  \Vertex[x=15,y=1]{a}
+  \Vertex[x=16,y=6]{h}
+  \Vertex[x=17,y=25]{y}
+  \Vertex[x=18,y=20]{v}
+  \tikzstyle{LabelStyle}=[fill=white,sloped]
+  \Edge[label=$35$](k)(n)
+  \Edge[label=$37$](w)(u)
+  \Edge[label=$15$](x)(b)
+  \Edge[label=$83$](z)(n)
+  \Edge[label=$18$](e)(z)
+  \Edge[label=$43$](u)(e)
+  \Edge[label=$92$](i)(j)
+  \Edge[label=$32$](j)(c)
+  \Edge[label=$37$](j)(k)
+  \Edge[label=$85$](g)(z)
+  \Edge[label=$57$](p)(s)
+  \Edge[label=$69$](w)(b)
+  \Edge[label=$76$](e)(c)
+  \Edge[label=$79$](a)(p)
+  \Edge[label=$64$](c)(h)
+  \Edge[label=$70$](w)(n)
+  \Edge[label=$56$](y)(a)
+  \Edge[label=$26$](v)(b)
+  \Edge[label=$45$](y)(p)
+  \Edge[label=$14$](v)(p)
+\end{tikzpicture}
+}\end{figure}
+\end{document}

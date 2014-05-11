@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['_5fdana',['_dana',['../class_element.html#a07fc2be998aaef31c5283e4014420f75',1,'Element']]],
+  ['_5fdostepnosc',['_dostepnosc',['../class_pole.html#a71a1d16a81b9c1fbe78055b748defc3e',1,'Pole']]],
+  ['_5fhaslo',['_haslo',['../class_element.html#a5adc6eefcea4421879ba7f69960f3d2d',1,'Element']]],
+  ['_5fhaslo2',['_haslo2',['../class_element.html#a0428d3ef2e3ba02dc3c116f900b41f7f',1,'Element']]],
+  ['_5fodleglosc',['_odleglosc',['../class_element.html#a206cb0915829707e829395aa1c320eca',1,'Element']]],
+  ['_5fodleglosc_5fod_5fpoczatku',['_odleglosc_od_poczatku',['../class_pole.html#a57fd443aaf2f438db4a136b94dfcb586',1,'Pole']]],
+  ['_5fodwiedzony',['_odwiedzony',['../class_element.html#a78bb5917b236378b74436d5c2471d724',1,'Element']]],
+  ['_5fojciec',['_ojciec',['../class_element.html#a92a5ea21225b0bf182f44f73594ab6b4',1,'Element']]],
+  ['_5fpoprzedni',['_poprzedni',['../class_element.html#a975e5d979354707594298802b66c40a9',1,'Element']]],
+  ['_5fpoprzednie_5fpole',['_poprzednie_pole',['../class_pole.html#ad2e0e70c96c56f297696948c98d1d862',1,'Pole']]],
+  ['_5fprognozowany_5fkoszt',['_prognozowany_koszt',['../class_pole.html#abb85b44ef47a160b5a82bdd25e691a6e',1,'Pole']]],
+  ['_5fsasiedzi_5fodwiedzeni',['_sasiedzi_odwiedzeni',['../class_element.html#ac615eb72456973cc328febd494ebfa5f',1,'Element']]],
+  ['_5fwaga',['_waga',['../class_element.html#a92ee233e04730ab987cf1082cfcd43cd',1,'Element']]],
+  ['_5fwielkosc_5fx',['_wielkosc_x',['../class_plansza.html#a5e6dc8845d0d3f1c9b7457e342971b4b',1,'Plansza']]],
+  ['_5fwielkosc_5fy',['_wielkosc_y',['../class_plansza.html#a8f896782ff5b9322070dc0fcc6f8efa0',1,'Plansza']]],
+  ['_5fwskaznik',['_wskaznik',['../class_element.html#a990b8110554103571bc5731545db526f',1,'Element']]],
+  ['_5fx',['_x',['../class_pole.html#a38ab32b71efba3ca72d77a5eec62ca83',1,'Pole']]],
+  ['_5fy',['_y',['../class_pole.html#ad6807e222bca77d3f8185f69e483b1ee',1,'Pole']]]
+];

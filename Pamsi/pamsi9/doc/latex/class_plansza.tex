@@ -1,0 +1,241 @@
+\hypertarget{class_plansza}{\section{Plansza Class Reference}
+\label{class_plansza}\index{Plansza@{Plansza}}
+}
+
+
+Klasa \hyperlink{class_plansza}{Plansza}.  
+
+
+
+
+{\ttfamily \#include $<$plansza.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plansza_ae58ab9e9e0a12c39f36750a0faa2c100}{\hyperlink{class_plansza_ae58ab9e9e0a12c39f36750a0faa2c100}{Plansza} ()}\label{class_plansza_ae58ab9e9e0a12c39f36750a0faa2c100}
+
+\begin{DoxyCompactList}\small\item\em Konstruktor Planszy. \end{DoxyCompactList}\item 
+bool \hyperlink{class_plansza_ab9e7c8dc7e1b636f1a96a515e2e37d8b}{stworz\+\_\+plansze} (int x, int y)
+\begin{DoxyCompactList}\small\item\em stworz\+\_\+plansze \end{DoxyCompactList}\item 
+\hyperlink{class_pole}{Pole} $\ast$ \hyperlink{class_plansza_ad91a7151ed6bf0679c98836334631311}{zwroc\+\_\+pole} (int wspolrzedna\+\_\+x, int wspolrzedna\+\_\+y)
+\begin{DoxyCompactList}\small\item\em zwroc\+\_\+pole \end{DoxyCompactList}\item 
+bool \hyperlink{class_plansza_aad21f32982bf1fde5cf8665508242c47}{znajdz\+\_\+droge} (\hyperlink{class_pole}{Pole} $\ast$poczatek, \hyperlink{class_pole}{Pole} $\ast$koniec)
+\begin{DoxyCompactList}\small\item\em znajdz\+\_\+droge \end{DoxyCompactList}\item 
+void \hyperlink{class_plansza_ac203f389b69c998b621ee058094f71ac}{wyswietl\+\_\+droge} ()
+\begin{DoxyCompactList}\small\item\em wyswietl\+\_\+droge \end{DoxyCompactList}\item 
+void \hyperlink{class_plansza_a397e24fb6a0bd9e72d94852b93532332}{wyswietl\+\_\+parametry\+\_\+drogi} ()
+\begin{DoxyCompactList}\small\item\em wyswietl\+\_\+parametry\+\_\+drogi \end{DoxyCompactList}\item 
+void \hyperlink{class_plansza_aa3a824f5472daf5bd319393b0ed55948}{wyswietl} ()
+\begin{DoxyCompactList}\small\item\em wyswietl \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_pole}{Pole} $\ast$ \hyperlink{class_plansza_a1a2574ca93b7df2633c33194ca7bb0a7}{cel}
+\begin{DoxyCompactList}\small\item\em cel \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_plansza_a56a28ea3686cecf09e45656bbb4300b5}{dodaj\+\_\+mozliwe\+\_\+kierunki\+\_\+ruchu} (\hyperlink{class_pole}{Pole} $\ast$pomocnicza)
+\begin{DoxyCompactList}\small\item\em dodaj\+\_\+mozliwe\+\_\+kierunki\+\_\+ruchu \end{DoxyCompactList}\item 
+bool \hyperlink{class_plansza_acabb8d0b2442fa98eb55ffe86ecf5700}{dodaj\+\_\+kierunek\+\_\+ruchu} (\hyperlink{class_pole}{Pole} $\ast$do\+\_\+dodania, \hyperlink{class_pole}{Pole} $\ast$pomocnicza, int koszt\+\_\+ruchu)
+\begin{DoxyCompactList}\small\item\em dodaj\+\_\+kierunek\+\_\+ruchu \end{DoxyCompactList}\item 
+int \hyperlink{class_plansza_a82f97be142851d458bb04b0dc6c1def4}{kodowanie\+\_\+pola} (\hyperlink{class_pole}{Pole} $\ast$pomocnicza)
+\begin{DoxyCompactList}\small\item\em kodowanie\+\_\+pola \end{DoxyCompactList}\item 
+void \hyperlink{class_plansza_a77ca237c0aa83871106611d4411e4aa8}{zapisz\+\_\+droge} (\hyperlink{class_pole}{Pole} $\ast$koniec)
+\begin{DoxyCompactList}\small\item\em zapisz\+\_\+droge \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_pole}{Pole} $\ast$$\ast$ \hyperlink{class_plansza_abe1ebd55bf2c57ab4294c93ade95fb58}{tab}
+\begin{DoxyCompactList}\small\item\em tab \end{DoxyCompactList}\item 
+int \hyperlink{class_plansza_a5e6dc8845d0d3f1c9b7457e342971b4b}{\+\_\+wielkosc\+\_\+x}
+\begin{DoxyCompactList}\small\item\em \+\_\+wielkosc\+\_\+x \end{DoxyCompactList}\item 
+int \hyperlink{class_plansza_a8f896782ff5b9322070dc0fcc6f8efa0}{\+\_\+wielkosc\+\_\+y}
+\begin{DoxyCompactList}\small\item\em \+\_\+wielkosc\+\_\+y \end{DoxyCompactList}\item 
+\hyperlink{class_lista}{Lista}$<$ posortowana, \hyperlink{class_pole}{Pole}, int $>$ \hyperlink{class_plansza_abe25940912409371c0cdfbf3547b5626}{kolejka\+\_\+priorytetowa}
+\begin{DoxyCompactList}\small\item\em kolejka\+\_\+priorytetowa \end{DoxyCompactList}\item 
+\hyperlink{class_lista}{Lista}$<$ posortowana, \hyperlink{class_pole}{Pole}, int $>$ \hyperlink{class_plansza_a49598690b46b9ef9c80761f77ef3a7e4}{lista\+\_\+odwiedzonych}
+\begin{DoxyCompactList}\small\item\em lista\+\_\+odwiedzonych \end{DoxyCompactList}\item 
+\hyperlink{class_lista}{Lista}$<$ nieposortowana, \hyperlink{class_pole}{Pole}, int $>$ \hyperlink{class_plansza_aec2526e5fde2763eb9f2447e0830c1cb}{droga}
+\begin{DoxyCompactList}\small\item\em droga \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa \hyperlink{class_plansza}{Plansza}. 
+
+Klasa odpowiedzialna za tworzenie struktury polaczonych ze soba pol. W strukturze tej mozna szukac najkrotszej sciezki pomiedzy polami. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_plansza_acabb8d0b2442fa98eb55ffe86ecf5700}{\index{Plansza@{Plansza}!dodaj\+\_\+kierunek\+\_\+ruchu@{dodaj\+\_\+kierunek\+\_\+ruchu}}
+\index{dodaj\+\_\+kierunek\+\_\+ruchu@{dodaj\+\_\+kierunek\+\_\+ruchu}!Plansza@{Plansza}}
+\subsubsection[{dodaj\+\_\+kierunek\+\_\+ruchu}]{\setlength{\rightskip}{0pt plus 5cm}bool Plansza\+::dodaj\+\_\+kierunek\+\_\+ruchu (
+\begin{DoxyParamCaption}
+\item[{{\bf Pole} $\ast$}]{do\+\_\+dodania, }
+\item[{{\bf Pole} $\ast$}]{pomocnicza, }
+\item[{int}]{koszt\+\_\+ruchu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_plansza_acabb8d0b2442fa98eb55ffe86ecf5700}
+
+
+dodaj\+\_\+kierunek\+\_\+ruchu 
+
+Metoda dodajaca sciezke z pola do\+\_\+dodania do pola pomocnicza o koszcie koszt\+\_\+ruchu. Dane te sa dodawane do kolejki priorytetowej. \hypertarget{class_plansza_a56a28ea3686cecf09e45656bbb4300b5}{\index{Plansza@{Plansza}!dodaj\+\_\+mozliwe\+\_\+kierunki\+\_\+ruchu@{dodaj\+\_\+mozliwe\+\_\+kierunki\+\_\+ruchu}}
+\index{dodaj\+\_\+mozliwe\+\_\+kierunki\+\_\+ruchu@{dodaj\+\_\+mozliwe\+\_\+kierunki\+\_\+ruchu}!Plansza@{Plansza}}
+\subsubsection[{dodaj\+\_\+mozliwe\+\_\+kierunki\+\_\+ruchu}]{\setlength{\rightskip}{0pt plus 5cm}void Plansza\+::dodaj\+\_\+mozliwe\+\_\+kierunki\+\_\+ruchu (
+\begin{DoxyParamCaption}
+\item[{{\bf Pole} $\ast$}]{pomocnicza}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_plansza_a56a28ea3686cecf09e45656bbb4300b5}
+
+
+dodaj\+\_\+mozliwe\+\_\+kierunki\+\_\+ruchu 
+
+Metoda dodajaca do kolejki priorytetowej wszystkie mozliwe sciezki wychodzace z pola pomocnicza. \hypertarget{class_plansza_a82f97be142851d458bb04b0dc6c1def4}{\index{Plansza@{Plansza}!kodowanie\+\_\+pola@{kodowanie\+\_\+pola}}
+\index{kodowanie\+\_\+pola@{kodowanie\+\_\+pola}!Plansza@{Plansza}}
+\subsubsection[{kodowanie\+\_\+pola}]{\setlength{\rightskip}{0pt plus 5cm}int Plansza\+::kodowanie\+\_\+pola (
+\begin{DoxyParamCaption}
+\item[{{\bf Pole} $\ast$}]{pomocnicza}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_plansza_a82f97be142851d458bb04b0dc6c1def4}
+
+
+kodowanie\+\_\+pola 
+
+Metoda zwracajaca kod pola pomocnicza. Po tym kodzie wykonywane jest szukanie pola w liscie odwiedzonych. \hypertarget{class_plansza_ab9e7c8dc7e1b636f1a96a515e2e37d8b}{\index{Plansza@{Plansza}!stworz\+\_\+plansze@{stworz\+\_\+plansze}}
+\index{stworz\+\_\+plansze@{stworz\+\_\+plansze}!Plansza@{Plansza}}
+\subsubsection[{stworz\+\_\+plansze}]{\setlength{\rightskip}{0pt plus 5cm}bool Plansza\+::stworz\+\_\+plansze (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_plansza_ab9e7c8dc7e1b636f1a96a515e2e37d8b}
+
+
+stworz\+\_\+plansze 
+
+Metoda tworzaca plansze o wymiarze x na y \hypertarget{class_plansza_aa3a824f5472daf5bd319393b0ed55948}{\index{Plansza@{Plansza}!wyswietl@{wyswietl}}
+\index{wyswietl@{wyswietl}!Plansza@{Plansza}}
+\subsubsection[{wyswietl}]{\setlength{\rightskip}{0pt plus 5cm}void Plansza\+::wyswietl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_plansza_aa3a824f5472daf5bd319393b0ed55948}
+
+
+wyswietl 
+
+Metoda wyswietlajaca cala plansze na stdout. \hypertarget{class_plansza_ac203f389b69c998b621ee058094f71ac}{\index{Plansza@{Plansza}!wyswietl\+\_\+droge@{wyswietl\+\_\+droge}}
+\index{wyswietl\+\_\+droge@{wyswietl\+\_\+droge}!Plansza@{Plansza}}
+\subsubsection[{wyswietl\+\_\+droge}]{\setlength{\rightskip}{0pt plus 5cm}void Plansza\+::wyswietl\+\_\+droge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_plansza_ac203f389b69c998b621ee058094f71ac}
+
+
+wyswietl\+\_\+droge 
+
+Metoda wyswietlajaca droge zawarta w liscie droga. \hypertarget{class_plansza_a397e24fb6a0bd9e72d94852b93532332}{\index{Plansza@{Plansza}!wyswietl\+\_\+parametry\+\_\+drogi@{wyswietl\+\_\+parametry\+\_\+drogi}}
+\index{wyswietl\+\_\+parametry\+\_\+drogi@{wyswietl\+\_\+parametry\+\_\+drogi}!Plansza@{Plansza}}
+\subsubsection[{wyswietl\+\_\+parametry\+\_\+drogi}]{\setlength{\rightskip}{0pt plus 5cm}void Plansza\+::wyswietl\+\_\+parametry\+\_\+drogi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_plansza_a397e24fb6a0bd9e72d94852b93532332}
+
+
+wyswietl\+\_\+parametry\+\_\+drogi 
+
+Metoda wyswietlajaca ilosc krokow, ktore sa potrzebne do pokonania sciezki zawartej w liscie droga oraz wyswietlajaca laczny koszt jaki jest potrzebny do jej pokonania. \hypertarget{class_plansza_a77ca237c0aa83871106611d4411e4aa8}{\index{Plansza@{Plansza}!zapisz\+\_\+droge@{zapisz\+\_\+droge}}
+\index{zapisz\+\_\+droge@{zapisz\+\_\+droge}!Plansza@{Plansza}}
+\subsubsection[{zapisz\+\_\+droge}]{\setlength{\rightskip}{0pt plus 5cm}void Plansza\+::zapisz\+\_\+droge (
+\begin{DoxyParamCaption}
+\item[{{\bf Pole} $\ast$}]{koniec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_plansza_a77ca237c0aa83871106611d4411e4aa8}
+
+
+zapisz\+\_\+droge 
+
+Metoda zapisujaca droge z pola pomocnicza do pola z ktorego rozpoczelo sie poszukiwanie. \hypertarget{class_plansza_aad21f32982bf1fde5cf8665508242c47}{\index{Plansza@{Plansza}!znajdz\+\_\+droge@{znajdz\+\_\+droge}}
+\index{znajdz\+\_\+droge@{znajdz\+\_\+droge}!Plansza@{Plansza}}
+\subsubsection[{znajdz\+\_\+droge}]{\setlength{\rightskip}{0pt plus 5cm}bool Plansza\+::znajdz\+\_\+droge (
+\begin{DoxyParamCaption}
+\item[{{\bf Pole} $\ast$}]{poczatek, }
+\item[{{\bf Pole} $\ast$}]{koniec}
+\end{DoxyParamCaption}
+)}}\label{class_plansza_aad21f32982bf1fde5cf8665508242c47}
+
+
+znajdz\+\_\+droge 
+
+Metoda znajdujaca droge z pola poczatek do pola koniec. Metoda zapisuje otrzymana sciezke w liscie droga. Wyszukiwanie odbywa sie za pomoca algorytmu A$\ast$. \hypertarget{class_plansza_ad91a7151ed6bf0679c98836334631311}{\index{Plansza@{Plansza}!zwroc\+\_\+pole@{zwroc\+\_\+pole}}
+\index{zwroc\+\_\+pole@{zwroc\+\_\+pole}!Plansza@{Plansza}}
+\subsubsection[{zwroc\+\_\+pole}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pole} $\ast$ Plansza\+::zwroc\+\_\+pole (
+\begin{DoxyParamCaption}
+\item[{int}]{wspolrzedna\+\_\+x, }
+\item[{int}]{wspolrzedna\+\_\+y}
+\end{DoxyParamCaption}
+)}}\label{class_plansza_ad91a7151ed6bf0679c98836334631311}
+
+
+zwroc\+\_\+pole 
+
+Metoda zwracajaca wskaznik do pola o wspolrzednych x i y. 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_plansza_a5e6dc8845d0d3f1c9b7457e342971b4b}{\index{Plansza@{Plansza}!\+\_\+wielkosc\+\_\+x@{\+\_\+wielkosc\+\_\+x}}
+\index{\+\_\+wielkosc\+\_\+x@{\+\_\+wielkosc\+\_\+x}!Plansza@{Plansza}}
+\subsubsection[{\+\_\+wielkosc\+\_\+x}]{\setlength{\rightskip}{0pt plus 5cm}int Plansza\+::\+\_\+wielkosc\+\_\+x\hspace{0.3cm}{\ttfamily [private]}}}\label{class_plansza_a5e6dc8845d0d3f1c9b7457e342971b4b}
+
+
+\+\_\+wielkosc\+\_\+x 
+
+Zmienna zawierajaca informacje o rozmiarze x planszy. \hypertarget{class_plansza_a8f896782ff5b9322070dc0fcc6f8efa0}{\index{Plansza@{Plansza}!\+\_\+wielkosc\+\_\+y@{\+\_\+wielkosc\+\_\+y}}
+\index{\+\_\+wielkosc\+\_\+y@{\+\_\+wielkosc\+\_\+y}!Plansza@{Plansza}}
+\subsubsection[{\+\_\+wielkosc\+\_\+y}]{\setlength{\rightskip}{0pt plus 5cm}int Plansza\+::\+\_\+wielkosc\+\_\+y\hspace{0.3cm}{\ttfamily [private]}}}\label{class_plansza_a8f896782ff5b9322070dc0fcc6f8efa0}
+
+
+\+\_\+wielkosc\+\_\+y 
+
+Zmienna zawierajaca informacje o rozmiarze y planszy. \hypertarget{class_plansza_a1a2574ca93b7df2633c33194ca7bb0a7}{\index{Plansza@{Plansza}!cel@{cel}}
+\index{cel@{cel}!Plansza@{Plansza}}
+\subsubsection[{cel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pole}$\ast$ Plansza\+::cel}}\label{class_plansza_a1a2574ca93b7df2633c33194ca7bb0a7}
+
+
+cel 
+
+Zmienna w ktorej przechowywany jest wskaznik do pola bedacego celem wyszukiwania sciezki. \hypertarget{class_plansza_aec2526e5fde2763eb9f2447e0830c1cb}{\index{Plansza@{Plansza}!droga@{droga}}
+\index{droga@{droga}!Plansza@{Plansza}}
+\subsubsection[{droga}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lista}$<$nieposortowana,{\bf Pole},int$>$ Plansza\+::droga\hspace{0.3cm}{\ttfamily [private]}}}\label{class_plansza_aec2526e5fde2763eb9f2447e0830c1cb}
+
+
+droga 
+
+\hyperlink{class_lista}{Lista} na ktorej gromadzone sa pola po ktorych nalezy sie poruszac, aby dotrzec pomiedzy zadanymi punktami. \hypertarget{class_plansza_abe25940912409371c0cdfbf3547b5626}{\index{Plansza@{Plansza}!kolejka\+\_\+priorytetowa@{kolejka\+\_\+priorytetowa}}
+\index{kolejka\+\_\+priorytetowa@{kolejka\+\_\+priorytetowa}!Plansza@{Plansza}}
+\subsubsection[{kolejka\+\_\+priorytetowa}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lista}$<$posortowana,{\bf Pole},int$>$ Plansza\+::kolejka\+\_\+priorytetowa\hspace{0.3cm}{\ttfamily [private]}}}\label{class_plansza_abe25940912409371c0cdfbf3547b5626}
+
+
+kolejka\+\_\+priorytetowa 
+
+\hyperlink{class_lista}{Lista} na ktorej sa gromadzone pola do ktorych nalezy sie udac wykonujac poszukiwanie optymalnej drogi. Pola te sa posortowane wzgledem prognozowanego kosztu przejscia przez dane pole. \hypertarget{class_plansza_a49598690b46b9ef9c80761f77ef3a7e4}{\index{Plansza@{Plansza}!lista\+\_\+odwiedzonych@{lista\+\_\+odwiedzonych}}
+\index{lista\+\_\+odwiedzonych@{lista\+\_\+odwiedzonych}!Plansza@{Plansza}}
+\subsubsection[{lista\+\_\+odwiedzonych}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lista}$<$posortowana,{\bf Pole},int$>$ Plansza\+::lista\+\_\+odwiedzonych\hspace{0.3cm}{\ttfamily [private]}}}\label{class_plansza_a49598690b46b9ef9c80761f77ef3a7e4}
+
+
+lista\+\_\+odwiedzonych 
+
+\hyperlink{class_lista}{Lista} na ktorej sa gromadzone pola do ktorych juz sie odwolano podczas poszukiwania optymalnej drogi. \hypertarget{class_plansza_abe1ebd55bf2c57ab4294c93ade95fb58}{\index{Plansza@{Plansza}!tab@{tab}}
+\index{tab@{tab}!Plansza@{Plansza}}
+\subsubsection[{tab}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pole}$\ast$$\ast$ Plansza\+::tab\hspace{0.3cm}{\ttfamily [private]}}}\label{class_plansza_abe1ebd55bf2c57ab4294c93ade95fb58}
+
+
+tab 
+
+Wskaznik na tablice zawierajaca zmienne \hyperlink{class_pole}{Pole} i bedacej podstawowa struktura klasy \hyperlink{class_plansza}{Plansza} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{plansza_8hh}{plansza.\+hh}\end{DoxyCompactItemize}

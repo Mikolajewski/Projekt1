@@ -1,0 +1,14 @@
+
+\documentclass[]{article}
+\usepackage{tikz}
+\usepackage{tikz,fullpage}
+\usetikzlibrary{arrows,%
+                petri,%
+                topaths}%
+\usepackage{tkz-berge}
+\usepackage[position=top]{subfig}
+\begin{document}
+\begin{figure}
+\centering
+\subfloat[]{
+\begin{tikzpicture}[scale=0.75,transform shape]
