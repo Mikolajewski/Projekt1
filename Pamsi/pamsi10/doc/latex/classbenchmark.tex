@@ -1,0 +1,103 @@
+\hypertarget{classbenchmark}{\section{benchmark Class Reference}
+\label{classbenchmark}\index{benchmark@{benchmark}}
+}
+
+
+Klasa benchmarek.  
+
+
+
+
+{\ttfamily \#include $<$benchmark.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classbenchmark_ab83ffeb122d3cc231acdbf45db4f5ff8}{wykonaj\+\_\+sprawdzenie\+\_\+algorytmu} (int ile\+\_\+razy)
+\begin{DoxyCompactList}\small\item\em Metoda wykonaj\+\_\+sprawdzenie\+\_\+algorytmu. \end{DoxyCompactList}\item 
+double \hyperlink{classbenchmark_a47af0a6ddc3d1e5afe3324f166ae1292}{oblicz\+\_\+sredni\+\_\+czas\+\_\+wykonywania\+\_\+algorytmu} ()
+\begin{DoxyCompactList}\small\item\em Metoda oblicz\+\_\+sredni\+\_\+czas\+\_\+wykonywania\+\_\+algorytmu. \end{DoxyCompactList}\item 
+void \hyperlink{classbenchmark_ad2fa742abac2df08a8a3174ca0cd2a09}{wypisz\+\_\+tablice\+\_\+czasow} ()
+\begin{DoxyCompactList}\small\item\em Metoda wypisz\+\_\+tablice\+\_\+czasow. \end{DoxyCompactList}\item 
+bool \hyperlink{classbenchmark_a452c061a57050dacd3429ad5186b49fe}{zapisz\+\_\+czasy\+\_\+do\+\_\+pliku} (char $\ast$nazwa)
+\begin{DoxyCompactList}\small\item\em Metoda zapisz\+\_\+czasy\+\_\+do\+\_\+pliku. \end{DoxyCompactList}\item 
+bool \hyperlink{classbenchmark_a880b885f576849cc98ee1ced757cb99d}{zapisz\+\_\+graf\+\_\+do\+\_\+pliku\+\_\+latex} (char $\ast$plik\+\_\+latex, \hyperlink{class_tablica}{Tablica} \&dane)
+\begin{DoxyCompactList}\small\item\em Metoda zapisz\+\_\+graf\+\_\+do\+\_\+pliku\+\_\+latex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa benchmarek. 
+
+Klasa wykonujaca sprawdzenie dlugosci wykonywania algorytmu okreslona ilosc razy oraz przedstawienie statystyk zwiazanych z wykonanymi pomiarami. Klasa ta bedzie rozbodowywany w ramach potrzeb przy nastepnych projektach. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbenchmark_a47af0a6ddc3d1e5afe3324f166ae1292}{\index{benchmark@{benchmark}!oblicz\+\_\+sredni\+\_\+czas\+\_\+wykonywania\+\_\+algorytmu@{oblicz\+\_\+sredni\+\_\+czas\+\_\+wykonywania\+\_\+algorytmu}}
+\index{oblicz\+\_\+sredni\+\_\+czas\+\_\+wykonywania\+\_\+algorytmu@{oblicz\+\_\+sredni\+\_\+czas\+\_\+wykonywania\+\_\+algorytmu}!benchmark@{benchmark}}
+\subsubsection[{oblicz\+\_\+sredni\+\_\+czas\+\_\+wykonywania\+\_\+algorytmu}]{\setlength{\rightskip}{0pt plus 5cm}double benchmark\+::oblicz\+\_\+sredni\+\_\+czas\+\_\+wykonywania\+\_\+algorytmu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbenchmark_a47af0a6ddc3d1e5afe3324f166ae1292}
+
+
+Metoda oblicz\+\_\+sredni\+\_\+czas\+\_\+wykonywania\+\_\+algorytmu. 
+
+\begin{DoxyReturn}{Returns}
+Zwraca wartosc srednia potrzebna na wykonanie algorytmu w sekundach (liczba double). 
+\end{DoxyReturn}
+\hypertarget{classbenchmark_ab83ffeb122d3cc231acdbf45db4f5ff8}{\index{benchmark@{benchmark}!wykonaj\+\_\+sprawdzenie\+\_\+algorytmu@{wykonaj\+\_\+sprawdzenie\+\_\+algorytmu}}
+\index{wykonaj\+\_\+sprawdzenie\+\_\+algorytmu@{wykonaj\+\_\+sprawdzenie\+\_\+algorytmu}!benchmark@{benchmark}}
+\subsubsection[{wykonaj\+\_\+sprawdzenie\+\_\+algorytmu}]{\setlength{\rightskip}{0pt plus 5cm}bool benchmark\+::wykonaj\+\_\+sprawdzenie\+\_\+algorytmu (
+\begin{DoxyParamCaption}
+\item[{int}]{ile\+\_\+razy}
+\end{DoxyParamCaption}
+)}}\label{classbenchmark_ab83ffeb122d3cc231acdbf45db4f5ff8}
+
+
+Metoda wykonaj\+\_\+sprawdzenie\+\_\+algorytmu. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Ilosc} & wykonan algorytmu. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbenchmark_ad2fa742abac2df08a8a3174ca0cd2a09}{\index{benchmark@{benchmark}!wypisz\+\_\+tablice\+\_\+czasow@{wypisz\+\_\+tablice\+\_\+czasow}}
+\index{wypisz\+\_\+tablice\+\_\+czasow@{wypisz\+\_\+tablice\+\_\+czasow}!benchmark@{benchmark}}
+\subsubsection[{wypisz\+\_\+tablice\+\_\+czasow}]{\setlength{\rightskip}{0pt plus 5cm}void benchmark\+::wypisz\+\_\+tablice\+\_\+czasow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbenchmark_ad2fa742abac2df08a8a3174ca0cd2a09}
+
+
+Metoda wypisz\+\_\+tablice\+\_\+czasow. 
+
+Metoda wypisujaca czasy w ktorych wykonal sie algorytm na standardowe wyjscie \hypertarget{classbenchmark_a452c061a57050dacd3429ad5186b49fe}{\index{benchmark@{benchmark}!zapisz\+\_\+czasy\+\_\+do\+\_\+pliku@{zapisz\+\_\+czasy\+\_\+do\+\_\+pliku}}
+\index{zapisz\+\_\+czasy\+\_\+do\+\_\+pliku@{zapisz\+\_\+czasy\+\_\+do\+\_\+pliku}!benchmark@{benchmark}}
+\subsubsection[{zapisz\+\_\+czasy\+\_\+do\+\_\+pliku}]{\setlength{\rightskip}{0pt plus 5cm}bool benchmark\+::zapisz\+\_\+czasy\+\_\+do\+\_\+pliku (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nazwa}
+\end{DoxyParamCaption}
+)}}\label{classbenchmark_a452c061a57050dacd3429ad5186b49fe}
+
+
+Metoda zapisz\+\_\+czasy\+\_\+do\+\_\+pliku. 
+
+Metoda zapisujaca dane z tablica\+\_\+czasow do pliku. Dzieki tej funkcji mozna w wygodny sposob skopiowac dane. \hypertarget{classbenchmark_a880b885f576849cc98ee1ced757cb99d}{\index{benchmark@{benchmark}!zapisz\+\_\+graf\+\_\+do\+\_\+pliku\+\_\+latex@{zapisz\+\_\+graf\+\_\+do\+\_\+pliku\+\_\+latex}}
+\index{zapisz\+\_\+graf\+\_\+do\+\_\+pliku\+\_\+latex@{zapisz\+\_\+graf\+\_\+do\+\_\+pliku\+\_\+latex}!benchmark@{benchmark}}
+\subsubsection[{zapisz\+\_\+graf\+\_\+do\+\_\+pliku\+\_\+latex}]{\setlength{\rightskip}{0pt plus 5cm}bool benchmark\+::zapisz\+\_\+graf\+\_\+do\+\_\+pliku\+\_\+latex (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{plik\+\_\+latex, }
+\item[{{\bf Tablica} \&}]{dane}
+\end{DoxyParamCaption}
+)}}\label{classbenchmark_a880b885f576849cc98ee1ced757cb99d}
+
+
+Metoda zapisz\+\_\+graf\+\_\+do\+\_\+pliku\+\_\+latex. 
+
+Metoda zapisujaca dane do pliku obslugiwanego przez srodowisko latex. W pliku wynikowym tworzony jest graf analizowany podczas wykonywania programu. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{benchmark_8hh}{benchmark.\+hh}\item 
+src/\hyperlink{benchmark_8cpp}{benchmark.\+cpp}\end{DoxyCompactItemize}
